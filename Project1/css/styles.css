@@ -1,0 +1,69 @@
+html { 
+  background: url(../images/background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+	width: 960px;
+
+}
+
+#outer_wrapper {
+
+}
+
+
+#inner_wrapper {
+	width: 44.270833333333%;    /* 425px / 960 px */
+	height: 100%;
+	max-height: 20em;	
+	background-color: rgba(166, 166, 168, .75);
+	color: black;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	border: 1px solid black;
+	border-radius:10px/30px;
+	-ms-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	overflow-x: hidden;
+	overflow-y: scroll;
+	
+ }
+ 
+#inner_wrapper::-webkit-scrollbar {
+	display: none;
+	-ms-overflow-style: none; 
+	}
+	
+.inner_header {
+	background: url(../images/logo1.png) no-repeat;	
+	background-color: fff;
+	}
+
+#inner_wrapper inner_header{
+	width: 75%;
+	background-color: #A6A6A8;
+	padding: 5px;	
+	margin:0 auto;
+	}
+	
+
+	
+
+
+	
+
+
+
+							
+
+						/*Style for navigation section */
+
+/*End Navigation CSS */
+
+	
