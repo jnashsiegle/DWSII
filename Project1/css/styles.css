@@ -8,6 +8,9 @@ html {
 
 body {
 	width: 960px;
+	font-family: Verdana, Georgia, Arial;
+	font-size: 100%
+	
 
 }
 
@@ -15,7 +18,8 @@ body {
 
 }
 
-
+				/*Styling for main body content within container */
+				
 #inner_wrapper {
 	width: 44.270833333333%;    /* 425px / 960 px */
 	height: 100%;
@@ -40,19 +44,22 @@ body {
 	-ms-overflow-style: none; 
 	}
 	
-.inner_header {
-	background: url(../images/logo1.png) no-repeat;	
-	background-color: fff;
-	}
-
-#inner_wrapper inner_header{
-	width: 75%;
-	background-color: #A6A6A8;
-	padding: 5px;	
-	margin:0 auto;
-	}
+#logo_container {			/* so we can resize our groundhog */
+	width: 62.823529411765%;       /*267/425 */
 	
-
+	}	
+	
+#inner_wrapper img[src*="logo.png"] {    
+    height: 50%;
+    width: 100%;
+    
+    }
+	
+article {
+background:rgba(255,255,255, 0.5);
+padding: .313em .625em;
+font-size:
+}
 	
 
 
