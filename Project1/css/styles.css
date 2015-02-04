@@ -21,9 +21,9 @@ body {
 				/*Styling for main body content within container */
 				
 #inner_wrapper {
-	width: 44.270833333333%;    /* 425px / 960 px */
+	width: 66.666666666667%;    /* 425px / 960 px */   /*0.66666666666667 | 44.270833333333% */
 	height: 100%;
-	max-height: 20em;	
+	max-height: 40em;	
 	background-color: rgba(166, 166, 168, .75);
 	color: black;
 	position: absolute;
@@ -58,9 +58,18 @@ body {
 article {
 background:rgba(255,255,255, 0.5);
 padding: .313em .625em;
-font-size:
+font-size: 100%;
 }
 	
+article h1 {
+font-size: 120%;
+}
+
+span:first-child {
+	font-style: italic;
+	font-weight: bold;
+	
+	}
 
 
 	
