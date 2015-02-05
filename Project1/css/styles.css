@@ -245,7 +245,7 @@ td, th {
 		/*Desktop (large screen min width 1224px)*/
 	
 	@media only screen 
-		and (min-width : 1224px) {
+		and (min-width : 1824px) {
 			nav li a {
 				font-size:120%;
 				background-color: #000;
