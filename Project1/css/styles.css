@@ -205,8 +205,9 @@ td, th {
 
 /*iphone 5 specific - portrait */
 	@media only screen 
-	and (min-device-width: 560px) 
-	and (max-device-width: 1136px) 
+	and (min-device-width: 320px) 
+	and (max-device-width: 560px)
+	and (orientation : portrait) 
 	and (-webkit-min-device-pixel-ratio: 2) {
 		#inner_wrapper {
 			width: 250px;
