@@ -9,19 +9,55 @@ html {
 body {
 	width: 960px;
 	font-family: Verdana, Georgia, Arial;
-	font-size: 100%
-	
-
+	font-size: 100%;
+	line-height: 1.5;
 }
 
-#outer_wrapper {
 
+
+						/*Style for navigation section */
+						
+nav {
+	margin-bottom: 1.875em;
 }
 
+nav ul {
+	list-style-type: none;
+}
+
+nav li a {
+	height: 1em;
+	line-height: 2em;
+	text-decoration: none;
+}
+
+nav li a:link {
+	color: #fff;
+	text-decoration: none;
+}
+
+nav li a:visited {
+	color: #b1e5f2;
+	text-decoration: none;
+}
+
+nav li a:hover {
+	background-color: #a6a6a8;
+	color: #272635;
+	text-decoration: underline;
+}
+
+nav li a:active {
+	color: #E8E9F3;
+	text-decoration: none;
+}
+
+						/*End Navigation CSS */
 				/*Styling for main body content within container */
 				
 #inner_wrapper {
-	width: 66.666666666667%;    /* 425px / 960 px */   /*0.66666666666667 | 44.270833333333% */
+	margin-top: 1.875em;
+	width: 66.666666666667%;    /* 320px / 960 px */   
 	height: 100%;
 	max-height: 40em;	
 	background-color: rgba(166, 166, 168, .75);
@@ -45,41 +81,120 @@ body {
 	}
 	
 #logo_container {			/* so we can resize our groundhog */
-	width: 62.823529411765%;       /*267/425 */
-	
-	}	
+	width: 83.4375%;       /*267/320 */	
+}	
 	
 #inner_wrapper img[src*="logo.png"] {    
     height: 50%;
     width: 100%;
-    
-    }
+}
 	
 article {
-background:rgba(255,255,255, 0.5);
-padding: .313em .625em;
-font-size: 100%;
+	background:rgba(255,255,255, 0.5);
+	padding: .313em .625em;
+	font-size: 100%;
 }
 	
 article h1 {
-font-size: 120%;
+	font-size: 120%;
 }
 
-span:first-child {
+p span:first-child {    /*let's italicize Groundhog 1 paragraph 1 sentence */
 	font-style: italic;
 	font-weight: bold;
+}
+
+article h2 {
+	font-size: 80%;
+	}
 	
+article h2 span:first-child {
+	font-size: 100%;
 	}
 
-
+			<!--CSS for table-->
+			
+#table_wrap {
+	margin: 0 auto;
+	}
+	
+table { 
+  width: 100%;   
+  border-collapse: collapse; 
+}
+			/*change odd row color */
+tr:nth-of-type(odd) { 
+  background: #eee; 
+}
+th { 
+  background: #333; 
+  color: white; 
+  font-weight: bold; 
+}
+td, th { 
+  padding: 6px; 
+  border: 1px solid #ccc; 
+  text-align: left; 
+}
 	
 
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
 
-
-							
-
-						/*Style for navigation section */
-
-/*End Navigation CSS */
-
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
 	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	tr th { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	
+	/*
+	Label the data
+	*/
+	td:nth-of-type(1):before { content: "Name"; }
+	td:nth-of-type(2):before { content: "Location"; }
+	
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+	@media only screen
+	and (min-device-width : 320px)
+	and (max-device-width : 480px) {
+		#inner_wrapper { 
+			padding: 0; 
+			margin: 0; 
+			width: 320px; }
+		}
+	
+	/* iPads (portrait and landscape) ----------- */
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+		#inner_wrapper { 
+			width: 495px; 
+		}
+	}
