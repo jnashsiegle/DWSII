@@ -76,7 +76,7 @@ nav li a:active {
 	
  }
  
-#inner_wrapper::-webkit-scrollbar {
+#inner_wrapper::-webkit-scrollbar {   /*meh dern firefox... :( */
 	display: none;
 	-ms-overflow-style: none; 
 	}
@@ -115,7 +115,7 @@ article h2 {
 	font-size: 80%;
 	}
 	
-article h2 span:first-child {
+article h2 span:first-child {    
 	font-size: 100%;
 	}
 	
@@ -150,6 +150,9 @@ td, th {
 }
 	
 		/*End Table CSS */
+		
+		
+		/*media queries*/
 
 @media only screen and (max-width: 760px),
 (min-device-width: 768px) and (max-device-width: 1024px)  {
