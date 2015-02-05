@@ -182,9 +182,8 @@ td, th {
 	
 }
 
-/* Smartphones (portrait and landscape) ----------- */
+/* Smartphones (landscape) ----------- */
 	@media only screen
-	and (min-device-width : 320px)
 	and (max-device-width : 480px) {
 		#inner_wrapper { 
 			padding: 0; 
