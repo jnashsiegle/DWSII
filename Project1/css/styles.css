@@ -147,12 +147,12 @@ td, th {
 @media only screen and (max-width: 760px),
 (min-device-width: 768px) and (max-device-width: 1024px)  {
 
-	/* Force table to not be like tables anymore */
+		/* Force table to not be like tables anymore */
 	table, thead, tbody, th, td, tr { 
 		display: block; 
 	}
 	
-	/* Hide table headers  */
+		/* Hide table headers  */
 	tr th { 
 		position: absolute;
 		top: -9999px;
@@ -162,7 +162,7 @@ td, th {
 	tr { border: 1px solid #ccc; }
 	
 	td { 
-		/* Behave  like a "row" */
+			/* make like a row */
 		border: none;
 		border-bottom: 1px solid #eee; 
 		position: relative;
@@ -170,9 +170,9 @@ td, th {
 	}
 	
 	td:before { 
-		/* Now like a table header */
+			/* Now like a table header */
 		position: absolute;
-		/* Top/left values mimic padding */
+			/* Top/left values mimic padding */
 		top: 6px;
 		left: 6px;
 		width: 45%; 
@@ -180,15 +180,13 @@ td, th {
 		white-space: nowrap;
 	}
 	
-	/*
-	Label the data
-	*/
+		/*	Data Labels	*/
 	td:nth-of-type(1):before { content: "Name"; }
 	td:nth-of-type(2):before { content: "Location"; }
 	
 }
 
-/* Smartphones (landscape) ----------- */
+		/* Smartphones (landscape) ----------- */
 	@media only screen
 	and (max-device-width : 480px) {
 		#inner_wrapper { 
@@ -198,10 +196,12 @@ td, th {
 		}		
 }
 
-/* Smartphones (portrait) ----------- */
+		/* Smartphones (portrait) ----------- */
 	@media only screen
 	and (max-width : 321px) {
 		#inner_wrapper {
+			padding: 0; 
+			margin: 0; 
 			width: 250px;
 			}
 		nav li ul{
@@ -209,13 +209,15 @@ td, th {
 		}		
 }
 
-/*iphone 5 specific - portrait */
+		/*iphone 5 specific - portrait */
 	@media only screen 
 	and (min-device-width: 320px) 
 	and (max-device-width: 560px)
 	and (orientation : portrait) 
 	and (-webkit-min-device-pixel-ratio: 2) {
 		#inner_wrapper {
+			padding: 0; 
+			margin: 0; 
 			width: 250px;
 			}
 		nav {
@@ -224,8 +226,23 @@ td, th {
 	}
 	
 	/* iPads (portrait and landscape) ----------- */
-	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	@media only screen 
+	and (min-device-width: 768px) 
+	and (max-device-width: 1024px) {
 		#inner_wrapper { 
+			padding: 0; 
+			margin: 0; 
 			width: 495px; 
 		}
 	}
+	
+		/*Desktop (large screen min width 1224px)*/
+	
+	@media only screen 
+		and (min-width : 1224px) {
+			nav li a {
+				font-size:120%;
+				background-color: #000;
+				line-height: 3;
+				}
+}
