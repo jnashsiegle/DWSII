@@ -198,7 +198,7 @@ td, th {
 		#inner_wrapper {
 			width: 250px;
 			}
-		nav {
+		nav li ul{
 		display:none;
 		}		
 }
