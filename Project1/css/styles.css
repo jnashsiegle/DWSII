@@ -188,8 +188,11 @@ td, th {
 	and (max-device-width : 480px) {
 		#inner_wrapper { 
 			padding: 0; 
-			 
+			margin: 0; 
 			width: 320px; }
+		nav {
+			display:none;
+			}
 		}
 	
 	/* iPads (portrait and landscape) ----------- */
