@@ -136,6 +136,7 @@ table {
 			/*change odd row color */
 tr:nth-of-type(odd) { 
 	background: #eee; 
+	
 }
 th { 
 	  background: #333; 
@@ -170,7 +171,7 @@ td, th {
 	td { 
 			/* make like a row */
 		border: none;
-		border-bottom: 1px solid #eee; 
+		border-bottom: 1px solid #000; 
 		position: relative;
 		padding-left: 50%; 
 	}
@@ -200,7 +201,7 @@ td, th {
 			margin: 0; 
 			width: 320px; }
 		}		
-}
+
 
 		/* Smartphones (portrait) ----------- */
 	@media only screen
@@ -219,8 +220,7 @@ td, th {
 	@media only screen 
 	and (min-device-width: 320px) 
 	and (max-device-width: 560px)
-	and (orientation : portrait) 
-	and (-webkit-min-device-pixel-ratio: 2) {
+	and (orientation : portrait) {
 		#inner_wrapper {
 			padding: 0; 
 			margin: 0; 
