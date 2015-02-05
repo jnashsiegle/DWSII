@@ -195,7 +195,7 @@ td, th {
 
 /* Smartphones (portrait) ----------- */
 	@media only screen
-	and (max-width : 321px))
+	and (max-width : 321px)
 	 {
 		nav {
 		display: none;
