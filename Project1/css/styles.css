@@ -212,7 +212,7 @@ td, th {
 		#inner_wrapper {
 			width: 250px;
 			}
-		nav li ul{
+		nav {
 		display:none;
 		}			
 	}
