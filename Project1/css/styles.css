@@ -89,6 +89,8 @@ nav li a:active {
     height: 50%;
     width: 100%;
 }
+
+		/*Beginning of content text */
 	
 article {
 	background:rgba(255,255,255, 0.5);
@@ -104,6 +106,10 @@ p span:first-child {    /*let's italicize Groundhog 1 paragraph 1 sentence */
 	font-style: italic;
 	font-weight: bold;
 }
+
+#credits {
+	font-size: 75%;
+	}
 
 article h2 {
 	font-size: 80%;
