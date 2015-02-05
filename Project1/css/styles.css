@@ -196,7 +196,7 @@ td, th {
 	@media only screen
 	and (max-width : 321px) {
 		#inner_wrapper {
-			width: 250px
+			width: 250px;
 			}
 		nav {
 		display:none;
