@@ -53,7 +53,8 @@ nav li a:active {
 }
 
 						/*End Navigation CSS */
-				/*Styling for main body content within container */
+						
+				/*Styling for main body content within inner container */
 				
 #inner_wrapper {
 	margin-top: 1.875em;
@@ -111,6 +112,10 @@ article h2 {
 article h2 span:first-child {
 	font-size: 100%;
 	}
+	
+h2 + blockquote {
+	font-style: italic;
+	}
 
 			<!--CSS for table-->
 			
@@ -128,7 +133,7 @@ tr:nth-of-type(odd) {
 }
 th { 
 	  background: #333; 
-	  color: fff; 
+	  color: #fff; 
 	  font-weight: bold; 
 }
 td, th { 
@@ -137,6 +142,7 @@ td, th {
 	  text-align: left; 
 }
 	
+		/*End Table CSS */
 
 @media only screen and (max-width: 760px),
 (min-device-width: 768px) and (max-device-width: 1024px)  {
