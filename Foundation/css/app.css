@@ -10,6 +10,7 @@ body {
 	  background-size: cover;
 	  width: 100%;
 	  overflow: hidden;
+	  
 	}
 
 
@@ -34,12 +35,15 @@ body {
 			}
 	}
 
+.panel h1, .panel h2, .panel h3 {
+	color: white;
+}
 
 .panel {
 	  height: auto;
 	  margin-top: 50%;
 	  margin-bottom: 50%;
-	  background: rgba(189, 196, 167, .80);
+	  background: rgba(0, 0, 0, .35);
 	  position: relative;  
 }
 
@@ -49,6 +53,8 @@ body {
 	  margin-bottom: 50%;
 	  position: relative;
 }
+
+
 	
 
 
