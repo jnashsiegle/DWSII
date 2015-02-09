@@ -1,0 +1,62 @@
+/*This will be my custom styles*/
+
+/* Setting the Responsive Background image */
+
+body { 
+	  background: url("../img/medSpice.jpg") no-repeat center center fixed; 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	  width: 100%;
+	  overflow: hidden;
+	}
+
+
+ @media only screen and (min-width: 90em) {
+	    body { 
+	  background: url("../img/largeSpice.jpg") no-repeat center center fixed; 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	  width: 100%;
+			}
+	}
+@media only screen and (max-width: 30em) {
+	    body { 
+	  background: url("../img/xsmallSpice.jpg") no-repeat center center fixed; 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	  width: 100%;
+			}
+	}
+
+
+.panel {
+	  height: auto;
+	  margin-top: 25%;
+	  margin-bottom: 50%;
+	  background: rgba(189, 196, 167, .80);
+	  position: relative;  
+}
+
+.panel.blur {
+	  height: auto;
+	  margin-top: 25%;
+	  margin-bottom: 50%;
+	  position: relative;
+}
+	
+
+
+
+
+
+
+   
+  /*Centering Method 2*/
+  
+}

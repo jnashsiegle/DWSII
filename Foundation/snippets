@@ -1,0 +1,10 @@
+<img data-interchange="[img/smallSpice.jpg, (small)], [img/medSpice.jpg, (medium)], [img/largeSpice.jpg, (large)]">
+   <noscript><img src="img/medSpice.jpg"></noscript>
+
+
+
+   ackground: url(../images/background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
