@@ -55,7 +55,7 @@ body {
 	  height: auto;
 	  margin-top: 25%;
 	  margin-bottom: 50%;
-	  position: relative;
+	  position: absolute;
 }
 
 	/* End Main Page Header */
@@ -63,32 +63,41 @@ body {
 
 	/* Beginning of off-canvas Nav */
 
+
+
 .left-off-canvas-menu {
-	background-color: #FFC44F;
+	background-color: #B26E63;
 	
 }
 
 .left-off-canvas-menu ul {
 	list-style-type: none;
+	
+}
+ ul.off-canvas-list li a {
+	color: #ffd7d0;
 }
 
-.left-off-canvas-menu li a, a:link {
-	color: #996600;
-}
-/*.left-off-canvas-menu li a:visited {    /*overrides a:link;/*
-	color: #000066;
-}*/
-
-.left-off-canvas-menu li a:hover {
-	color: #CCFFCC;
+ul.off-canvas-list li label {
+	background-color: #762E23;
+	color: #ffd7d0;
 }
 
-.left-off-canvas-menu li a:focus {   /* using wrong color */
-	color: red;
+
+
+.tab-bar-section.middle {
+	background-color: #B26E63;
 }
 
-.left-off-canvas-menu li a:active {     /*not working */
-	color: #0000FF;
+.tab-bar .menu-icon {
+	background-color: #B26E63;
+	color: #ffd7d0;
+	box-shadow: 0 0 0 1px #B26E63, 0 7px 0 1px ##B26E63, 0 14px 0 1px ##B26E63;
+}
+
+ul.off-canvas-list li a:hover, a:focus {
+	color: #001F3F;
+	background-color: #ddd;
 }
 
 .left-off-canvas-toggle {

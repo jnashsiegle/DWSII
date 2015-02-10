@@ -8,3 +8,29 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
+
+  left-off-canvas-menu li a, a:link {
+	color: #996600;
+}
+
+.left-off-canvas-menu li a:visited {
+	color: #000066;
+}
+
+.left-off-canvas-menu li a:active {
+	color: #0000FF;
+}
+
+.left-off-canvas-menu ul li a:hover {
+	color: #CCFFCC;
+}
+
+
+
+.left-off-canvas-toggle {
+	color: #FFC44F;
+}
+.left-off-canvas-toggle:hover {
+	color: #CCFFCC;
+}
