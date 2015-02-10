@@ -35,6 +35,10 @@ body {
 			}
 	}
 
+	/* End Main page Background */
+
+	/* Main Page Header */
+
 .panel h1, .panel h2, .panel h3 {
 	color: white;
 }
@@ -54,6 +58,28 @@ body {
 	  position: relative;
 }
 
+	/* End Main Page Header */
+
+
+	/* Beginning of off-canvas Nav */
+
+.left-off-canvas-menu {
+	background-color: #FFC44F;
+	
+}
+
+.left-off-canvas-menu ul {
+	list-style-type: none;
+}
+
+.left-off-canvas-menu li a {
+	color: #996600;
+	text-decoration: none;
+}
+
+.left-off-canvas-toggle {
+	color: #FFC44F;
+}
 
 	
 
