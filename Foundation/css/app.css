@@ -72,15 +72,26 @@ body {
 	list-style-type: none;
 }
 
-.left-off-canvas-menu li a {
+.left-off-canvas-menu li a, a:link {
 	color: #996600;
 }
+/*.left-off-canvas-menu li a:visited {    /*overrides a:link;/*
+	color: #000066;
+}*/
 
-.left-off-canvas-menu li a:hover, a:focus{
+.left-off-canvas-menu li a:hover {
 	color: #CCFFCC;
 }
 
-.left-off-canvas-toggle{
+.left-off-canvas-menu li a:focus {   /* using wrong color */
+	color: red;
+}
+
+.left-off-canvas-menu li a:active {     /*not working */
+	color: #0000FF;
+}
+
+.left-off-canvas-toggle {
 	color: #FFC44F;
 }
 .left-off-canvas-toggle:hover {
