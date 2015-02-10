@@ -34,3 +34,25 @@
 .left-off-canvas-toggle:hover {
 	color: #CCFFCC;
 }
+
+
+<div class="off-canvas-wrap" data-offcanvas>
+  <div class="inner-wrap">
+    
+
+    <a class="left-off-canvas-toggle" href="#" >Menu</a>
+
+    <!-- Off Canvas Menu -->
+    <aside class="left-off-canvas-menu">
+        <p>Where would you like to go?</p>
+          <ul>
+            <li class = "active"><a href="index.html">Home</a></li>
+            <li><a href="#">Ethnic Foods</a></li>
+            <li><a href="#">Seafood</a></li>
+            <li><a href="#">Sweets</a></li>
+            <li><a href="#">Beverages</a></li>
+            
+          </ul>
+    </aside>
+
+    #85144B
