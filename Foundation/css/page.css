@@ -34,30 +34,62 @@
   text-decoration: inherit;
 }
 
-	/* Body Background */
+	/* Body */
 
 body { 
-	  background-color: #FECEC7;
-	  width: 75%;
-	  margin: 0 auto;
+	 background-color: #FECEC7;
+	 width: 75%;
+	 margin: 0 auto;
 	 }
+
+   /*Main Page */
 
 .main {
 	background-color: #D9988D;
 	border: 3px solid #B26E63;
-	border-radius: 0 0 10px 10px;
-
-	
-}
-
-.show-for-small img {
-	margin: 0 auto;
+	border-radius: 0 0 10px 10px;	
 }
 
 
-.large-3.small-6.columns {
-            .* use to equalize columns? */
+/*--Miscellaneous Tidbits */
+h4 {
+  color: white;
+  text-align: center;
 }
+
+
+.button {
+  background-color: #B26E63;
+}
+
+blockquote {
+  padding: 50% 1.25rem 50% 1.875rem;
+  border-left: 3px solid #ddd;
+}
+
+a.large.button.radius.expand:hover {
+  background-color: #B58759;
+}
+
+.panel {
+  border: 3px solid #B26E63;
+}
+
+.th .panel {
+  border :0;
+}
+
+
+/*Table Styling */
+
+table {
+    margin: 0 auto;
+  }
+
+section.panel {
+  margin-top: 1.25rem;
+}
+
 
 
 /*Nav and tab bar */
@@ -68,7 +100,7 @@ body {
 }
 	/* Beginning of off-canvas Nav */
 
-	/* Left Side */
+	   /* Left Side */
 
 .left-off-canvas-menu, .right-off-canvas-menu {
 	background-color: #B26E63;
@@ -88,9 +120,9 @@ ul.off-canvas-list li label {
 	color: #ffd7d0;
 }
 
-	/* End of left Side Nav Menu */
+	   /* End of left Side Nav Menu */
 
-	/* General Tab Bar Styling */
+	   /* General Tab Bar Styling */
 
 .tab-bar-section.middle {
 	background-color: #B26E63;
@@ -139,13 +171,6 @@ ul.off-canvas-list li a:hover, a:focus {
 	
 	/* Log In and Sign up Forms */
 
-/* Styles for signup panels */
-
-
- 	/*Let's resize and style the form */
-
-
-}
 
 #myModal, #myModal1 {
 	width: 50%;
@@ -163,25 +188,25 @@ ul.off-canvas-list li a:hover, a:focus {
 }
 
 input[type="text"] {
--webkit-appearance: none;
-border-radius: 0;
-background-color: #FFFFFF;
-font-family: inherit;
-border-style: solid;
-border-width: 1px;
-border-color: #B26E63;
-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
-color: rgba(0, 0, 0, 0.75);
-display: block;
-font-size: 0.875rem;
-margin: 0 0 1rem 0;
-padding: 0.5rem;
-height: 2.3125rem;
-width: 100%;
--webkit-box-sizing: border-box;
--moz-box-sizing: border-box;
-box-sizing: border-box;
-transition: all 0.15s linear;
+  -webkit-appearance: none;
+  border-radius: 0;
+  background-color: #FFFFFF;
+  font-family: inherit;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #B26E63;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.75);
+  display: block;
+  font-size: 0.875rem;
+  margin: 0 0 1rem 0;
+  padding: 0.5rem;
+  height: 2.3125rem;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  transition: all 0.15s linear;
 }
 
 .welcome {
@@ -222,17 +247,26 @@ transition: all 0.15s linear;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
+.reveal-modal .column, .reveal-modal .columns {
+    min-width: 0; }
+  .reveal-modal > :first-child {
+    margin-top: 0; }
+  .reveal-modal > :last-child {
+    margin-bottom: 0; 
+  }
+}
+
 .left-solid {
 	margin-top: 0px;
 	margin-bottom: 0px;
 }
 
 .signup-panel {
-	 border-radius: 5px;
-	 padding: 15px; 
-	 margin-top: 30px;
-	 margin-bottom: 30px;
-	 background: #FECEC7;
+	border-radius: 5px;
+	padding: 15px; 
+	margin-top: 30px;
+	margin-bottom: 30px;
+	background: #FECEC7;
 }
 
 .signup-panel a{
@@ -285,23 +319,25 @@ span.prefix {
   background-color: #FECEC7;
   padding: 1.875rem;
   border: solid 1px #666666;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); }
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
   @media only screen and (max-width: 40em) {
     .reveal-modal {
-      min-height: 10vh; } }
-  .reveal-modal .column, .reveal-modal .columns {
-    min-width: 0; }
-  .reveal-modal > :first-child {
-    margin-top: 0; }
-  .reveal-modal > :last-child {
-    margin-bottom: 0; }
+      min-height: 10vh; 
+    }
+  }
+
+
+
   @media only screen and (min-width: 40.063em) {
     .reveal-modal {
       width: 50%;
       max-width: 31.250rem;
       left: 0;
       right: 0;
-      margin: 0 auto; } }
+      margin: 0 auto; 
+      } 
+    }
  
     @media only screen and (min-width: 40.063em) {
     .reveal-modal.large {
@@ -309,14 +345,18 @@ span.prefix {
       max-width: 31.250rem;
       left: 0;
       right: 0;
-      margin: 0 auto; } }
+      margin: 0 auto;
+       } 
+     }
   @media only screen and (min-width: 40.063em) {
     .reveal-modal.xlarge {
       width: 50%;
       max-width: 31.250rem;
       left: 0;
       right: 0;
-      margin: 0 auto; } }
+      margin: 0 auto; 
+      } 
+    }
   
   
  

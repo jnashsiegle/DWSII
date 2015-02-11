@@ -250,6 +250,15 @@ transition: all 0.15s linear;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
+.reveal-modal .column, .reveal-modal .columns {
+    min-width: 0; }
+  .reveal-modal > :first-child {
+    margin-top: 0; }
+  .reveal-modal > :last-child {
+    margin-bottom: 0; 
+	}
+}
+
 .left-solid {
 	margin-top: 0px;
 	margin-bottom: 0px;
@@ -290,6 +299,10 @@ transition: all 0.15s linear;
   background-color: #B26E63;
 }
 
+.signup-panel a.button:hover {
+	background-color: #B58759;
+}
+
 .newusers {
   background: ##FECEC7;
 }        
@@ -313,23 +326,24 @@ span.prefix {
   background-color: #FECEC7;
   padding: 1.875rem;
   border: solid 1px #666666;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); }
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+   }
+
   @media only screen and (max-width: 40em) {
     .reveal-modal {
-      min-height: 10vh; } }
-  .reveal-modal .column, .reveal-modal .columns {
-    min-width: 0; }
-  .reveal-modal > :first-child {
-    margin-top: 0; }
-  .reveal-modal > :last-child {
-    margin-bottom: 0; }
+      min-height: 10vh; 
+      } 
+  }
+  
   @media only screen and (min-width: 40.063em) {
     .reveal-modal {
       width: 50%;
       max-width: 31.250rem;
       left: 0;
       right: 0;
-      margin: 0 auto; } }
+      margin: 0 auto; 
+      } 
+  }
  
     @media only screen and (min-width: 40.063em) {
     .reveal-modal.large {
@@ -337,14 +351,19 @@ span.prefix {
       max-width: 31.250rem;
       left: 0;
       right: 0;
-      margin: 0 auto; } }
+      margin: 0 auto; 
+      } 
+  }
+
   @media only screen and (min-width: 40.063em) {
     .reveal-modal.xlarge {
       width: 50%;
       max-width: 31.250rem;
       left: 0;
       right: 0;
-      margin: 0 auto; } }
+      margin: 0 auto; 
+      } 
+  }
   
   
  
