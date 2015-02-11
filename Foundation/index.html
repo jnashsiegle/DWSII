@@ -55,21 +55,62 @@
     <aside class="right-off-canvas-menu">
       <ul class="off-canvas-list">
         <li><label>Tools  </label></li>
-        <li><a href="#">Log In</a></li>
-        <li><a href="#">Sign Up</a></li>
+
+        <!-- Log In form -->
+        <li><a href="#" data-reveal-id="myModal">Log In</a>
+            <div id="myModal" class="reveal-modal remove-whitespace" data-reveal>
+                  <div class="row">
+                      <div class="large-12 columns auth-plain">
+                        <div class="signup-panel left-solid">
+                          <p class="welcome">Welcome Back!</p>
+                          <form>
+                            <div class="row collapse">
+                              <div class="small-2  columns">
+                                <span class="prefix"><i class="fi-torso-female"></i></span>
+                              </div>
+                              <div class="small-10  columns">
+                                <input type="text" placeholder="username">
+                              </div>
+                            </div>
+                            <div class="row collapse">
+                              <div class="small-2 columns ">
+                                <span class="prefix"><i class="fi-lock"></i></span>
+                              </div>
+                              <div class="small-10 columns ">
+                                <input type="text" placeholder="password">
+                              </div>
+                            </div>
+                          </form>
+                          <a href="#" class="button radius">Let's Go! </a>
+                        </div>
+                      </div>
+                    </div>   
+                    <a class="close-reveal-modal">&#215;</a>
+                  </div>
+            </li>
+
+            <!-- New User Form (Does not include New User information, merely the offer to create an account due to time constraints and the two forms meet requirements -->
+
+          <li><a href="#" data-reveal-id="myModal1">Sign Up</a>
+                <div id="myModal1" class="reveal-modal remove-whitespace" data-reveal>
+                  <div class="row">
+                        <div class="large-12 columns auth-plain">
+                        <div class="signup-panel newusers">
+                          <p class="welcome"> New User?</p>
+                          <p>By creating an account with us, you will be able to access even more recipes and information.</p><br>
+                          <a href="#" class="button radius">Sign Up</a></br>
+                        </div>
+                      </div> 
+                      <a class="close-reveal-modal">&#215;</a>
+                  </div>
+          </li>
       </ul>
     </aside>
    
  
-   
- 
 
-  
+  <!-- Main Header (Middle of page) -->
 
-
-
-
-  <!-- Main Header -->
     <div class = "row">
 
       <header class = "small-8 small-centered columns">
