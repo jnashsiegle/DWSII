@@ -1,0 +1,30 @@
+/* This will be the custom styles needed for the page only */
+
+body { 
+	  background-color: #B26E63;
+	  width: 75%;
+	  overflow: hidden;
+	  
+	}
+
+
+ /*@media only screen and (min-width: 90em) {
+	    body { 
+	  background: url("../img/largeSpice.jpg") no-repeat center center fixed; 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	  width: 100%;
+			}
+	}
+@media only screen and (max-width: 30em) {
+	    body { 
+	  background: url("../img/xsmallSpice.jpg") no-repeat center center fixed; 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	  width: 100%;
+			}
+	}*/
