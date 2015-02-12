@@ -163,6 +163,7 @@ ul.off-canvas-list li label {
 
 .tab-bar h1 {
   font-family: 'Allura', cursive;
+  font-size: 2em;
 }
 
 .tab-bar .menu-icon, .right-small {
@@ -197,6 +198,9 @@ ul.off-canvas-list li a:hover, a:focus {
 	color: #CCFFCC;
 }
 	
+ul.off-canvas-list li label.name {
+  font-family: 'Allura', cursive;    /*Make only the list label with the Recipe Potpourri name use this font */
+}
 	/* Log In and Sign up Forms */
 
 

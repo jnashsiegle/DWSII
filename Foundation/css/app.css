@@ -102,9 +102,7 @@ body {
 	font-family: 'Allura', cursive;
 }
 
-li label {
-	font-family: 'Allura', cursive;
-}
+
 	/* End Main Page Header */
 
 
@@ -140,6 +138,11 @@ ul.off-canvas-list li label {
 .tab-bar-section.middle {
 	background-color: #B26E63;
 }
+ul.off-canvas-list li label.name{
+	font-family: 'Allura', cursive;    /*Make only the list label with the Recipe Potpourri name use this font */
+}
+
+
 
 
  	/* Tab Bar, menus on both sides specific styling */
@@ -151,6 +154,7 @@ ul.off-canvas-list li label {
 
 .tab-bar h1 {
 	font-family: 'Allura', cursive;
+	font-size: 2em;
 }
 
 .right-small {
