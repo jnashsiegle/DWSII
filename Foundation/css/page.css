@@ -162,7 +162,9 @@ ul.off-canvas-list li label {
 }
 
 .tab-bar h1 {
-  font-family: 'Brush Script MT', cursive;
+  font-family: "Lucida Calligraphy";
+  font-style: italic;
+  font-weight: normal;
   font-size: 2em;
 }
 
@@ -199,8 +201,9 @@ ul.off-canvas-list li a:hover, a:focus {
 }
 	
 ul.off-canvas-list li label.name {
-  font-family: 'Brush Script MT', cursive;    /*Make only the list label with the Recipe Potpourri name use this font */
-}
+  font-family: "Lucida Calligraphy";
+  font-weight: normal;
+  font-style: italic;
 	/* Log In and Sign up Forms */
 
 
