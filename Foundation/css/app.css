@@ -99,7 +99,7 @@ body {
 
 .panel h1 {
 	color: white;
-	font-family: 'Allura', cursive;
+	font-family: 'Brush Script MT', cursive;
 }
 
 
@@ -139,7 +139,7 @@ ul.off-canvas-list li label {
 	background-color: #B26E63;
 }
 ul.off-canvas-list li label.name{
-	font-family: 'Allura', cursive;    /*Make only the list label with the Recipe Potpourri name use this font */
+	font-family: 'Brush Script MT', cursive;    /*Make only the list label with the Recipe Potpourri name use this font */
 }
 
 
@@ -153,7 +153,7 @@ ul.off-canvas-list li label.name{
 }
 
 .tab-bar h1 {
-	font-family: 'Allura', cursive;
+	font-family: 'Brush Script MT', cursive;
 	font-size: 2em;
 }
 

@@ -162,7 +162,7 @@ ul.off-canvas-list li label {
 }
 
 .tab-bar h1 {
-  font-family: 'Allura', cursive;
+  font-family: 'Brush Script MT', cursive;
   font-size: 2em;
 }
 
@@ -199,7 +199,7 @@ ul.off-canvas-list li a:hover, a:focus {
 }
 	
 ul.off-canvas-list li label.name {
-  font-family: 'Allura', cursive;    /*Make only the list label with the Recipe Potpourri name use this font */
+  font-family: 'Brush Script MT', cursive;    /*Make only the list label with the Recipe Potpourri name use this font */
 }
 	/* Log In and Sign up Forms */
 
