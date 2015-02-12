@@ -37,14 +37,17 @@
 	/* Body */
 
 body { 
+   font-family: 'Lato', sans-serif;;
 	 background-color: #FECEC7;
 	 width: 75%;
 	 margin: 0 auto;
+
 	 }
 
    /*Main Page */
 
 .main {
+  font-family: 'Lato', sans-serif;
 	background-color: #D9988D;
 	border: 3px solid #B26E63;
 	border-radius: 0 0 10px 10px;	
@@ -53,18 +56,22 @@ body {
 
 /*--Miscellaneous Tidbits */
 h4 {
+  font-family: 'Lato', sans-serif;
   color: white;
   text-align: center;
 }
 
+hr {
+  border: 1px solid #B26E63;
+}
 
 .button {
   background-color: #B26E63;
 }
 
 blockquote {
-  padding: 50% 1.25rem 50% 1.875rem;
-  border-left: 3px solid #ddd;
+  padding: 33% 1.25rem 50% 1.875rem;
+  border-left: 3px solid #B26E63;
 }
 
 a.large.button.radius.expand:hover {
@@ -73,6 +80,10 @@ a.large.button.radius.expand:hover {
 
 .panel {
   border: 3px solid #B26E63;
+}
+
+.th {
+  border: 2px solid #B26E63;
 }
 
 .th .panel {
@@ -84,12 +95,25 @@ a.large.button.radius.expand:hover {
 
 table {
     margin: 0 auto;
+    border: 2px solid #B26E63;
+    border-radius: 2px;
   }
 
 section.panel {
   margin-top: 1.25rem;
 }
 
+table th {
+  background-color: #D9988D;
+}
+
+table tr:nth-child(odd) {
+  background-color: #FECEC7;
+}
+
+table tr:nth-child(even) {
+  background-color: #FFE7E3;
+  }
 
 
 /*Nav and tab bar */
@@ -125,7 +149,7 @@ ul.off-canvas-list li label {
 	   /* General Tab Bar Styling */
 
 .tab-bar-section.middle {
-	background-color: #B26E63;
+  background-color: #B26E63;
 
 }
 
@@ -135,6 +159,10 @@ ul.off-canvas-list li label {
 .tab-bar {
 	width: 100%;
 	margin: 0 auto;
+}
+
+.tab-bar h1 {
+  font-family: 'Allura', cursive;
 }
 
 .tab-bar .menu-icon, .right-small {
@@ -179,7 +207,7 @@ ul.off-canvas-list li a:hover, a:focus {
 	margin-top: 0;
 	margin-bottom: 0;
 	max-width: 31.250rem;
-	background-color: #B26E63;
+	
 }
 
 .reveal-modal .close-reveal-modal {

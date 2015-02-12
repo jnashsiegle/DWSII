@@ -36,6 +36,7 @@
 /* Setting the Responsive Background image */
 
 body { 
+	  font-family: 'Lato', sans-serif;
 	  background: url("../img/medSpice.jpg") no-repeat center center fixed; 
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
@@ -75,9 +76,11 @@ body {
 
 	/* Main Page Header */
 
-.panel h1, .panel h2, .panel h3 {
+.panel h2, .panel h3 {
+	font-family: 'Lato', sans-serif;
 	color: white;
 }
+
 
 .panel {
 	  height: auto;
@@ -94,6 +97,14 @@ body {
 	  position: absolute;
 }
 
+.panel h1 {
+	color: white;
+	font-family: 'Allura', cursive;
+}
+
+li label {
+	font-family: 'Allura', cursive;
+}
 	/* End Main Page Header */
 
 
@@ -136,6 +147,10 @@ ul.off-canvas-list li label {
 .tab-bar .menu-icon, .right-small {
 	background-color: #B26E63;    /* Remove shadow and line between tab bar and menu icon  to make one smooth bar */
 	color: #ffd7d0;
+}
+
+.tab-bar h1 {
+	font-family: 'Allura', cursive;
 }
 
 .right-small {
@@ -182,7 +197,7 @@ ul.off-canvas-list li a:hover, a:focus {
 	margin-top: 0;
 	margin-bottom: 0;
 	max-width: 31.250rem;
-	background-color: #B26E63;
+	
 }
 
 .reveal-modal .close-reveal-modal {
