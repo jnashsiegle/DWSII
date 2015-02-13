@@ -90,6 +90,33 @@ a.large.button.radius.expand:hover {
   border :0;
 }
 
+/* Lightbox Styling */
+
+.clearing-caption {
+  background-color: #B26E63;
+}
+
+.clearing-container {
+  background-color: #B26E63;
+}
+
+.clearing-blackout {
+  background-color: #B26E63;
+  }
+
+.clearing-assembled .clearing-container .carousel>ul li img {
+  border: 1px solid #B58759;
+  margin: 0 2rem;  
+}
+
+.carousel {
+  background-color: white;
+}
+
+ul.clearing-thumbs {
+  background-color: #D9988D;
+}
+
 
 /*Table Styling */
 
@@ -97,6 +124,15 @@ table {
     margin: 0 auto;
     border: 2px solid #B26E63;
     border-radius: 2px;
+  }
+
+  table th:first-child {
+    width: 6.25rem;
+
+  }
+
+  table th:last-child {
+    width: 9.375rem;
   }
 
 section.panel {
@@ -204,6 +240,7 @@ ul.off-canvas-list li label.name {
   font-family: "Lucida Calligraphy";
   font-weight: normal;
   font-style: italic;
+}
 	/* Log In and Sign up Forms */
 
 
@@ -215,6 +252,15 @@ ul.off-canvas-list li label.name {
 	margin-bottom: 0;
 	max-width: 31.250rem;
 	
+}
+
+#myModal3 {
+  width: 100%;
+  max-width: 62.5rem;
+}
+
+.myModal3, article.panel {
+  background-color: white;
 }
 
 .reveal-modal .close-reveal-modal {
@@ -289,7 +335,7 @@ input[type="text"] {
   .reveal-modal > :last-child {
     margin-bottom: 0; 
   }
-}
+
 
 .left-solid {
 	margin-top: 0px;
@@ -332,7 +378,7 @@ input[type="text"] {
 }
 
 .newusers {
-  background: ##FECEC7;
+  background: #FECEC7;
 }        
 
 span.prefix {

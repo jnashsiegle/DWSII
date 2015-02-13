@@ -7,8 +7,8 @@
           <link rel="stylesheet" href="css/foundation.min.css" />
           <link rel = "stylesheet" href = "css/page.css" />
           <link rel="stylesheet" href="foundation-icons/foundation-icons.css" />
-          <link href='http://fonts.googleapis.com/css?family=Allura' rel='stylesheet' type='text/css'>
-          <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+          <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
           <script src="js/vendor/modernizr.js"></script>
   </head>
   <body>
@@ -26,7 +26,7 @@
           <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
         </section>
 
-      <!-- Middle tab-bar --> n
+      <!-- Middle tab-bar --> 
 
         <section class="middle tab-bar-section">
           <h1 class="title">Recipe Potpourri</h1>
@@ -116,20 +116,22 @@
 
   <div class = "main">
 
-              <!-- SLIDER IMAGE AT TOP -->
+              <!-- SLIDER IMAGE AT TOP  Entry into LightBox PhotoGallery of all images sitewide-->
 
       <div class="row">
           <div class="large-12 columns">         
               <div class="hide-for-small">
                   <ul class="clearing-thumbs" data-clearing>
 
-                     <li class="clearing-featured-img">
+                     <li class="clearing-featured-img panel">
+                     <!--Lets Add a Tooltip -->
                      <span data-tooltip aria-haspopup="true" class="has-tip" title="Welcome to Recipe Potpourri!  Feel free to browse through our photo gallery of foods here!">
-                     <a href = "img/slider_large.jpg" alt="Presidio of Monterey"><img src = "img/slider_large.jpg"></a></li></span>
-                      <li class = "hide"><a href="img/falafel.jpg"><img src="img/falafel.jpg"></a></li>
-                      <li class = "hide"><a href="img/cfrice.png"><img src="img/cfrice.png"></a></li>
-                      <li class = "hide"><a href="img/tzaziki.jpg"><img src="img/tzaziki.jpg"></a></li>
-                      <li class = "hide"><a href="img/cp.jpg"><img src="img/cp.jpg"></a></li>
+                     <a href = "img/slider_large.jpg"><img data-caption="A festival at the Presidio, Monterey" src = "img/slider_large.jpg" alt = "Presidio, Monterey"></a></span></li>
+                      <li class = "hide"><a href="img/falafel.jpg"><img data-caption="A dish of Falafel." src="img/falafel.jpg" alt = "falafel"></a></li>
+                      <li class = "hide"><a href="img/cfrice.png"><img data-caption="A scrumptious dish of Chicken Fried Rice" src="img/cfrice.png" alt = "chicken fried rice"></a></li>
+                      <li class = "hide"><a href="img/tzaziki.jpg"><img data-caption="The wonderful Greek sauce of Tzatziki" src="img/tzaziki.jpg" alt = "tzatziki sauce"></a></li>
+                      <li class = "hide"><a href="img/cp.jpg"><img data-caption="A childhood memory, Hungarian Chicken Paprikash" src="img/cp.jpg" alt = "chicken paprikash"></a></li>
+                      <li class = "hide"> <a href = "img/medSpice.jpg"><img data-caption="A variety of spices carefully displayed." src = "img/smallSpice.jpg"  alt = "spoons of spice"></a></li>
                     </ul>
                    
                        
@@ -138,12 +140,12 @@
 
               <!-- SLIDER IMAGE FOR SMALLER RESOLUTIONS -->
       <div class="row">
-          <div class="small-12 show-for-small"><br/>
+          <div class="small-12 panel show-for-small"><br/>
                     <img src="img/slider_medium.jpg" alt="Presidio of Monterey">
           </div>
       </div>            
           </div>
-      </div><br/>
+     <br/>
 
               <!-- END TOP SLIDER -->
 
@@ -154,33 +156,92 @@
             <div class = "panel radius">
                 <div class="row" data-equalizer>  
 
-               
+
+
+
+
+                      <!--connecting a modal to the thumbnail -->
                 <div class="large-3 small-6 columns" >
-                    <a class="th" href="img/falafel.jpg">
-                      <img src="img/falafel.jpg" alt = "Falafel" data-equalizer-watch/>
-                        <p class="panel radius" >Falafel<br/> - Israel</p>
-                    </a>
+                <div class="th">
+                <!-- Add a tool tip to advise of link for recipe -->
+                <span data-tooltip aria-haspopup="true" class="has-tip" title="This is a link to open a window for the recipe"> 
+                                
+                    <a href="#" data-reveal-id="myModal3">                                       
+                          <img src="img/falafel.jpg" alt = "Falafel" data-equalizer-watch/></a></span>
+                              <p class= "panel radius" >Falafel<br/> - Israel</p>
+                                 </div>                          
+                   
+                            <!-- modal markup -->
+
+                        <div id="myModal3" class="reveal-modal remove-whitespace" data-reveal>
+                    <div class="row">
+                        <div class="large-12 columns auth-plain">
+                            <div class="signup-panel radius newusers">
+                                <h1 class="welcome"> How to make Falafel</h1>
+                                    <article class = "panel radius">
+                                    <h3>Ingredients</h3>
+                                    <ul>
+                                          <li>1 cup dried chickpeas</li>
+                                         <li> 1/2 large onion, roughly chopped (about 1 cup)</li>
+                                          <li>2 tablespoons finely chopped fresh parsley</li>
+                                          <li>2 tablespoons finely chopped fresh cilantro</li>
+                                          <li>1 teaspoon salt</li>
+                                          <li>1/2-1 teaspoon dried hot red pepper</li>
+                                          <li>4 cloves of garlic</li>
+                                          <li>1 teaspoon cumin</li>
+                                          <li>1 teaspoon baking powder</li>
+                                          <li>4-6 tablespoons flour</li>
+                                          <li>Soybean or vegetable oil for frying</li>
+                                          <li>Chopped tomato for garnish</li>
+                                          <li>Diced onion for garnish</li>
+                                          <li>Diced green bell pepper for garnish</li>
+                                          <li>Tahina sauce</li>
+                                          <li>Pita bread</li>
+                                        </ul>
+
+                                        <h3>Preparation</h3>
+
+                                      <ol>
+                                        <li>Put the chickpeas in a large bowl and add enough cold water to cover them by at least 2 inches. Let soak overnight, then drain. Or use canned chickpeas, drained.</li>
+
+                                         <li>Place the drained, uncooked chickpeas and the onions in the bowl of a food processor fitted with a steel blade. Add the parsley, cilantro, salt, hot pepper, garlic, and cumin. Process until blended but not pureed.</li>
+
+                                         <li>Sprinkle in the baking powder and 4 tablespoons of the flour, and pulse. You want to add enough bulgur or flour so that the dough forms a small ball and no longer sticks to your hands. Turn into a bowl and refrigerate, covered, for several hours.</li>
+
+                                          <li>Form the chickpea mixture into balls about the size of walnuts, or use a falafel scoop, available in Middle-Eastern markets.</li>
+
+                                         <li>Heat 3 inches of oil to 375 degrees in a deep pot or wok and fry 1 ball to test. If it falls apart, add a little flour. Then fry about 6 balls at once for a few minutes on each side, or until golden brown. Drain on paper towels. Stuff half a pita with falafel balls, chopped tomatoes, onion, green pepper, and pickled turnips. Drizzle with tahina thinned with water.</li>
+                                         </ol>
+                                         </article>
+
+                            </div>
+                          </div> 
+                      <a class="close-reveal-modal">&#215;</a>
+                    </div>
                 </div>
+                              <!-- End of Modal Markup -->
+          
+                </div>  <!--closing div for large-3 small 6 of falafel -->
          
                 <div class="large-3 small-6 columns">
-                    <a class = "th" href="img/cfrice.png">
+                    <div class = "th">
                       <img src="img/cfrice.png" alt = "Chicken Fried Rice" data-equalizer-watch  />
                         <p class="panel radius">Chicken Fried Rice <br/>- Chinese</p>
-                    </a>
+                    </div>
                 </div>
          
                 <div class="large-3 small-6 columns" >
-                    <a class= "th" href = "img/tzaziki.jpg">
+                    <div class= "th">
                       <img src="img/tzaziki.jpg" alt = "Tzatziki"  data-equalizer-watch/>
                         <p class="panel radius" >Tzatziki<br/> - Greek</p>
-                    </a>
+                    </div>
                 </div>
          
                 <div class="large-3 small-6 columns" >
-                    <a class = "th" href = "img/cp.jpg">
+                    <div class = "th">
                       <img src="img/cp.jpg" alt = "Chicken Paprikash"  data-equalizer-watch/>
                         <p class="panel radius">Chicken Paprikash<br/> - Hungarian</p>
-                    </a>
+                    </div>
                 </div>
                 </div>
 
@@ -240,12 +301,12 @@
 
 
                         <section class = "panel radius">
-                        <table summary = "Top 5 Most Delicious foods of the world">
+                        <table>
                           <caption>Top 5 Most Delicious Foods of the World</caption>
                           <thead>
                             <tr>
-                              <th width = "100">Country</th>
-                              <th width = "150">Food</th>
+                              <th>Country</th>
+                              <th>Food</th>
                               </tr>
                           </thead>
                           <tbody>
