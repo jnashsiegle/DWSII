@@ -99,7 +99,8 @@ body {
 
 .panel h1 {
 	color: white;
-	font-family: "Lucida Calligraphy"
+	font-family: "lucida calligraphy",arial,"sans serif";
+	font-weight: normal;
 }
 
 
@@ -139,7 +140,7 @@ ul.off-canvas-list li label {
 	background-color: #B26E63;
 }
 ul.off-canvas-list li label.name{
-	font-family: "Lucida Calligraphy";
+	font-family: "lucida calligraphy",arial,"sans serif";
 	font-weight: normal;
 	font-style: italic;    /*Make only the list label with the Recipe Potpourri name use this font */
 }
@@ -158,7 +159,7 @@ ul.off-canvas-list li label.name{
 	font-family: "Lucida Calligraphy";
 	font-style: italic;
 	font-weight: normal;
-	font-size: 2em;
+	font-size: 1.5rem;
 }
 
 .right-small {
@@ -188,12 +189,12 @@ ul.off-canvas-list li a:hover, a:focus {
 	color: #CCFFCC;
 }
 	
-	/* Log In and Sign up Forms */
+	/* Log In and Sign up Forms 
 
-/* Styles for signup panels */
+ 	Styles for signup panels 
 
 
- 	/*Let's resize and style the form */
+ 	Let's resize and style the form */
 
 
 
@@ -352,7 +353,7 @@ span.prefix {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
    }
 
-  @media only screen and (max-width: 40em) {
+  @media only screen and (max-width: 40em) and (orientation: landscape) {
     .reveal-modal {
       min-height: 10vh; 
       } 
