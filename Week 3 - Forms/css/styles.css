@@ -1,0 +1,217 @@
+
+/*RGB Colors:
+Based off of:;
+Apricot - #fbceb1    (very soft orange)
+
+#fbceb1 - very soft orange   rgb(251,206,177)  / rgba(251, 206, 177, 0.5)
+#fbb1b9 - very soft red   rgb(251,177,185)  / rgba(251,177,185, 0.5)
+#fbf3b1 - very soft yellow rgb(251,243,177)  / rgba(251,243,177, 0.5)
+#b1b9fb - very soft blue  rgb(177,185,251)  / rgba(177,185,251, 0.5)
+#b9fbb1 - very soft green rgb(185,251,177)  / rgba(185,251,177, 0.5)
+
+*/
+
+
+
+
+					/* Utilities */
+
+.clearfix:before, .container:after { 
+  content: ""; 
+  display: table; 
+}  
+.clearfix:after { 
+  clear: both; 
+}  
+/*  End Basic Utilities */
+
+
+
+   /* Setting font sizes once and for all */
+   
+body {
+	font-size: .75em;
+}
+
+h1 { 
+	font-size: 2.074em;
+}
+
+h2 { 
+	font-size: 1.728em; 
+}
+
+h3 { 
+	font-size: 1.44em; 
+}
+
+h4 { 
+	font-size: 1.2em; 
+}
+
+
+@media screen and (min-width: 1400px) {
+  html { 
+    font-size: 1.25em; 
+  }
+}
+
+	/*End font sizing */
+
+html {
+  
+  background: #fff; /* Fills the page */
+  box-sizing: border-box;  
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;  
+}
+
+
+body { 	
+  max-width: 1400px;
+  margin: 0 auto;
+	background-color: #fff;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+   margin: 0 auto;
+}
+
+form    {
+background: #F9EDE5;
+font-style: italic;
+line-height: 1.5;
+font-weight: bold;
+color: #5668ef;
+text-decoration: none;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+padding:10px;
+border: 1px solid #999;
+border: inset 1px solid #333;
+-webkit-box-shadow: 0px 0px 8px rgba(204, 207, 188, 1);
+-moz-box-shadow: 0px 0px 8px rgba(204, 207, 188, 1);
+box-shadow: 0px 0px 8px rgba(204, 207, 188, 1); 
+}
+
+input, textarea, select {
+ background: rgb(254,255,255); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(254,255,255,1) 0%, rgba(247,247,244,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(254,255,255,1)), color-stop(100%,rgba(247,247,244,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(254,255,255,1) 0%,rgba(247,247,244,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(254,255,255,1) 0%,rgba(247,247,244,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(254,255,255,1) 0%,rgba(247,247,244,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(254,255,255,1) 0%,rgba(247,247,244,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#f7f7f4',GradientType=0 ); /* IE6-8 */
+border: 1px solid #b1b9fb;
+-webkit-box-shadow: 0px 0px 8px rgba(204, 207, 188, 1);
+-moz-box-shadow: 0px 0px 8px rgba(204, 207, 188, 1);
+box-shadow: 0px 0px 8px rgba(204, 207, 188, 1);
+}
+textarea:focus, input:focus {
+border: 1px solid #ce719e;
+-webkit-box-shadow: 0px 0px 8px rgba(206, 113, 147, 0.5);
+-moz-box-shadow: 0px 0px 8px rgba(206, 113, 147, 0.5);
+box-shadow: 0 0 10px #ce719e;
+}
+
+
+input[type="submit"]{
+width:120px;
+right:20px;
+bottom:20px;
+background: rgb(249,244,245); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(249,244,245,1) 0%, rgba(177,185,251,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(249,244,245,1)), color-stop(100%,rgba(177,185,251,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(249,244,245,1) 0%,rgba(177,185,251,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(249,244,245,1) 0%,rgba(177,185,251,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(249,244,245,1) 0%,rgba(177,185,251,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(249,244,245,1) 0%,rgba(177,185,251,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f4f5', endColorstr='#b1b9fb',GradientType=0 ); /* IE6-8 */
+color:#fff;
+text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+font-family: Tahoma, Geneva, sans-serif;
+font-size: 1em;
+height:30px;
+margin-left: 5px;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+border: 1px solid #999
+}
+
+input:focus {
+  outline: none;
+}
+input[type="submit"]:hover {
+background:#b1b9fb;
+color:#fff;
+transition: 1s;
+}
+
+#passwordStrength {
+  margin-top: 10px;
+}
+legend {
+	font-size: 1em;
+}
+
+fieldset {
+  border: none;
+}
+
+
+
+.submit {
+	float: right;
+	display: inline-block;
+	padding-right: .625em;
+}
+
+input[type=url] {
+    width: 3.75em;
+}
+
+/* asterisk for required */
+.red {
+  color: red;
+}
+
+.required:after { 
+  content:" *"; 
+  color: red;
+}
+
+/* end asterisk */
+
+textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 50%;
+}
+
+footer, header { 
+	position: relative; 
+	clear: both; 
+}
+
+
+body, footer, header {  
+	border: 1px solid  #ddd; padding: 1.25em; margin: 0 auto; 
+}
+
+
+
+
+
+
+  }
+}
+
+

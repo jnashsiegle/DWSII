@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html class = "no-js">
+<head>
+		<meta charset="utf-8" />
+	<link rel="stylesheet" href="css/normalize.css" type="text/css">
+	<link rel="stylesheet" href="css/styles.css" type="text/css">	
+		<title>Web Design Client Questionaire</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+		<script src="js/password.js"></script>
+		<script src = "js/modernizr.js"></script>  	
+
+<!--[if lt IE 9]>
+    	<script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+  	<div class="wrapper">
+
+  				<!--Beginning of Form -->
+
+			  	
+			  		<form id = "questions" method = "post">			  			
+			  				<h1>Tell us about your needs so we can determine how best to assist you.</h1>
+			  				<p>This first section will create an account so that you can save the form and continue at a later time.</p>
+			  			
+			  			<hr>
+
+			  			<fieldset>			  		
+			  				<legend>Tell us a bit about yourself.  (<span class = "red">*</span> required field)</legend>
+			  							  			
+			  			
+			  				<!--Company Info -->
+			  				
+			  				<fieldset>
+			  					<label for = "company">What is the name of your company?</label>
+			  						<input id = "company" type = "text" placeholder = "company name" required aria-required = "true">
+			  				</fieldset>
+			  				
+			  				<fieldset>
+			  				<div class = "required">
+			  					<label for = "business">What type of business is it?</label>  
+			  						<select id = "business" required aria-required = "true">
+			  							<option value = "">Please select</option>
+			  							<option value = "Marketing">Marketing</option>
+			  							<option value = "Telecommunications">Telecommunications</option>
+			  							<option value = "Retail">Retail</option>
+			  							<option value = "Restaurant">Restaurant</option>
+			  							<option value = "Education">Education</option>
+			  							<option value = "Non-Profit">Non-Profit</option>
+			  						</select>
+			  				</div>
+			  				</fieldset>
+			  				
+			  				
+			  				<fieldset>
+			  					<label for = "date">When did your company begin operations?</label>
+			  						<input id = "date" type = "date" name = "date"/>
+			  				</fieldset>
+			  				
+			  					<!--User information -->
+			  				
+			  				<fieldset>
+			  				<div class = "required">
+			  					<label for = "fname">What is your first name?</label>
+			  						<input id = "fname" type = "text" placeholder = "first name" required aria-required = "true">
+			  				</div>
+			  				</fieldset>
+			  				
+			  				<fieldset>
+			  				<div class = "required">
+			  					<label for = "lname">What is your last name?</label>
+			  						<input id = "lname" type = "text" placeholder = "last name" required aria-required = "true">
+			  				</div>
+			  				</fieldset>
+			  				
+			  				<fieldset>
+			  				<div class = "required">
+			  					<label for = "email">Your email address</label>
+			  						<input id = "email" name = "email" type = "email" placeholder = "user@mydomain.com" required aria-required = "true">
+			  				</div>
+			  				</fieldset>
+			  				
+			  				<fieldset>
+			  						<label for = "tel">At what phone number may we contact you at?</label>
+			  							<input type="tel" pattern="\(\d\d\d\) ?\d\d\d-\d\d\d\d" placeholder="(###) ###-####" id = "tel"/>
+			  				</fieldset>
+			  				
+			  				<fieldset>
+			  				<div class = "required">
+			  					<label for="passwordInput">Password: <input type="password" id="passwordInput" name="passwordInput" placeholder = "password" required aria-required = "true"></label>
+								<label for="confirmPasswordInput">Confirm Password: <input type="password" id="confirmPasswordInput" name="confirmPasswordInput" placeholder = "confirm password" required aria-required = "true"></label></div>
+									<div class="" id="passwordStrength"></div>
+										<input type="submit" value="Save Password" class="btn">
+
+							</fieldset>
+							
+							<fieldset>
+								<div class = "submit">
+									<p><a href = "">Cancel</a>
+										<input class="submit_btn" name="submit" type="submit" value="Save" onclick="submit();" />
+										<input class="submit_btn" name="submit" type="submit" value="Save and Quit" onclick="submit();" />
+									</p>
+								</div>
+							</fieldset>							
+						</fieldset>  
+
+						<!--End Company and User Inputs -->
+
+						<hr />
+
+						<fieldset>	
+							<legend>Technical Questions</legend>  <!-- Beginning Technical Questions -->
+							
+								<fieldset>
+									<label for = "resizable">How does your company handle email?</label><br />
+										<textarea id="resizable" rows="2" cols="40" placeholder = "Put text here"></textarea>								
+								</fieldset>						
+								<fieldset><legend>Do you need any password protected areas?</legend>
+									<label for = "pwprot">Yes</label> 
+								    	<input type="radio" name="pwprot" value="yes" id = "pwprot">  
+								    <label for = "pwprot1">No</label>
+								    	<input type="radio" name= "pwprot" value="no" id = "pwprot1">
+								  </fieldset> 
+												
+							
+
+								
+								<fieldset><legend>Do you have the RGB or Hex numbers for your current company colors?</legend>
+								    <label for = "pantone">Yes</label>  
+								    	<input type="radio" name="pantone" value="yes" id = "pantone">  
+								    <label for = "pantone1">No</label>
+								    	<input type="radio" name= "pantone" value="no" id = "pantone1"> <br />	
+									<label for = "favcolor">If yes, please show us your colors. </label>
+										 <input type="color" name="favcolor" id = "favcolor"><input type="color" name="favcolor"><input type="color" name="favcolor">
+								</fieldset>	
+								
+								<fieldset><legend>Did you take a look at our portfolio?</legend>
+									<label for = "portfolio">Yes</label>  
+								    	<input type="radio" name="portfolio" value="yes" id = "portfolio">  
+								    <label for = "portfolio1">No</label>
+								    	<input  type="radio" name= "portfolio" value="no" id = "portfolio1"> 	
+								</fieldset>
+							
+								<fieldset><legend>What is your timeframe?</legend>
+									<label for = "time">1 Month</label> 
+								    	<input type="radio" name="time" value="month" id = "time">  
+								    <label for = "time1">3 Months</label> 
+								    	<input type="radio" name= "time" value="months" id = "time1">  
+								    <label for = "time2">6 Months</label> 
+								    	<input type="radio" name= "time" value="months" id = "time2">  
+								    <label for = "time3">1 year</label>  
+								    	<input type="radio" name= "time" value="year" id = "time3"> 								    
+								</fieldset>
+							
+								<fieldset>
+									<legend>Is this a brocure site or a blog? (Check all that apply)</legend>
+								 	<label for = "brochure">Brochure</label>  
+								    	<input type="checkbox" name="brochure" value="brochure" id = "brochure"> 
+								     <label for = "blog">Blog</label>
+								    	<input type="checkbox" name="blog" value="blog" id = "blog">  
+									<label for = "website">Website</label> 
+								    	<input type="checkbox" name="website" value="website" id = "website"> 
+									<label for = "app">Mobile App</label> 
+								    	<input type="checkbox" name="app" value="app" id = "app">
+								  </fieldset> 
+							
+								<fieldset>
+									<label for = "url">Do you have an existing website?  If so, please provide the URL below.</label><br />
+										<input type="url" name="homepage" placeholder = "http://"  id = "url" readonly /> <input type = "text" /><input type="submit" value="Go" >
+								</fieldset>
+							
+
+							<div class = "submit">
+								<fieldset>
+									<p><a href = "">Cancel</a>
+										<input class="submit_btnsubmit_btn" name="submit" type="submit" value="Save" onclick="submit();" />
+										<input class="submit_btn" name="submit" type="submit" value="Save and Quit" onclick="submit();" />
+									</p>
+								</fieldset>
+							</div>
+							
+						
+								</fieldset>   <!-- End of technical questions -->
+
+							<hr />
+								<fieldset>						
+									<legend>Just a few more questions</legend>
+
+								<fieldset>
+									<legend>Are you familiar with usability testing?</legend>
+									<label for = "usability">Yes</label>
+										  <input class="yes" type="radio" name="usability" value="yes" id = "usability">  
+									<label for = "usability1">No</label>
+									       <input class="no" type="radio" name= "usability" value="no" id = "usability1">  
+								</fieldset>	
+								
+								<fieldset>
+									<legend>Do you have your content prepared?</legend>
+									<label for = "content">Yes</label>
+									    	<input class="yes" type="radio" name="content" value="yes" id = "content">  
+									 <label for = "content1">No</label>
+									    	<input class="no" type="radio" name= "content" value="no" id = "content1">  
+								</fieldset>
+								
+								<fieldset><legend>Do you want to maintain your own site?</legend>
+									  <label for = "maintain">Yes</label>
+								    		<input class="yes" type="radio" name="maintain" value="yes" id = "maintain">  
+								      <label for = "maintain1">No</label>
+								    		<input class="no" type="radio" name= "maintain" value="no" id = "maintain1">  
+								   </fieldset>
+							
+								    <fieldset><legend>If no, would you like us to do so for you?</legend>
+										<label for = "maintain2">Yes</label>
+								    		<input class="yes" type="radio" name="maintain" value="yes" id = "maintain2">  
+								   		<label for = "maintain3">No</label>
+								    		<input class="no" type="radio" name= "maintain" value="no" id = "maintain3">  
+								   	</fieldset>
+							
+
+									<fieldset><legend>Do you need any social media tools built in and if so, which ones? (Check all that apply)</legend>
+										<label for = "digg">Digg</label>
+								    		<input type="checkbox" name="Digg" value="Digg" id = "digg">  
+								       	<label for = "facebook">Facebook</label>
+								    		<input type="checkbox" name="Facebook" value="Facebook" id = "facebook">  
+								       	<label for = "twitter">Twitter</label>
+								    		<input type="checkbox" name="Twitter" value="Twitter" id = "twitter">  
+								    	<label for = "instagram">Instagram</label> 
+								    		<input type="checkbox" name="Instagram" value="Instagram" id = "instagram">  
+								    	<label for = "linkedin">Linkedin</label>
+								    		<input type="checkbox" name="Linkedin" value="Linkedin" id = "linkedin">  
+								    	<label for = "pinterest">Pinterest</label>
+								    	    <input type="checkbox" name="Pinterest" value="Pinterest" id = "pinterest">  
+								    	<label for = "google">Google+</label>
+								    	    <input type="checkbox" name="Google+" value="Google+" id = "google">
+								    </fieldset>
+
+								    <fieldset><legend>What is your budget?</legend>
+								    	<label for = "budget">$</label>
+			  								<input type = "text" placeholder = "0,000.00"  id = "budget" aria-required = "true">
+			  						</fieldset>
+			  				
+			  						<fieldset><legend>What is the purpose of your project?</legend>
+											<textarea class="resizable" rows="2" cols="40" placeholder = "Put text here"></textarea>
+									</fieldset>
+							
+
+									<fieldset><legend>Describe the style of your project that you have in mind.</legend>
+											<textarea class="resizable" rows="2" cols="40" placeholder = "Put text here"></textarea>
+									</fieldset>
+
+									<fieldset><legend>Is there anything else we can do for you?</legend>
+										<textarea class="resizable" rows="2" cols="40" placeholder = "Put text here"></textarea>
+									</fieldset>
+							
+
+							<div class= "submit">
+								<p><a href = "">Cancel</a>
+								<input class="submit_btn" name="submit" type="submit" value="Save" onclick="submit();" />
+								<input class="submit_btn" name="submit" type="submit" value="Save and Submit" onclick="submit();" />
+								</p>
+							</div>
+					</fieldset>
+				</form>
+
+	</div>   <!--End of Container -->
+
+		
+
+  	<footer>
+  		<p>&copy;2015 Created by Jana Nash-Siegle</p>
+  	</footer>
+
+  		
+
+  	</body>
+  	</html>
+
+
+
+
+
+
+
