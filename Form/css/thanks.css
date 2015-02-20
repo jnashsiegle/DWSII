@@ -10,23 +10,7 @@ Apricot - #fbceb1    (very soft orange)
 #b9fbb1 - very soft green rgb(185,251,177)  / rgba(185,251,177, 0.5)
 
 */
-
-
-
-
-					/* Utilities */
-
-.clearfix:before, .container:after { 
-  content: ""; 
-  display: table; 
-}  
-.clearfix:after { 
-  clear: both; 
-}  
-/*  End Basic Utilities */
-
-
-
+					
    /* Setting font sizes once and for all */
    
 body {
@@ -41,102 +25,152 @@ h2 {
 	font-size: 1.728em; 
 }
 
-h3 { 
-	font-size: 1.44em; 
-}
-
-h4 { 
-	font-size: 1.2em; 
-}
 	/*End font sizing */
 
-/* Setting the Responsive Background image */
+html {
+  box-sizing: border-box;  
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;  
+}
+
 
 body { 
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     background-color: #fff;
     width: 1400px;
-    overflow: hidden;
-    
+    overflow: hidden;    
   }
 
 .page {
   width: 80%;
-  height: 750px;
-  margin: 0 auto;
-  background: #F9EDE5;
-font-style: italic;
-line-height: 1.5;
-font-weight: bold;
-color: #5668ef;
-text-decoration: none;
--webkit-border-radius: .626em;
--moz-border-radius: .626em;
-border-radius: .626em;
-padding:.626em;
-border: 1px solid #333;
--webkit-box-shadow: 0px 0px 8px rgba(204, 207, 188, 1);
--moz-box-shadow: 0px 0px 8px rgba(204, 207, 188, 1);
-box-shadow: 0px 0px 8px rgba(204, 207, 188, 1); 
+  height: 46.875em;
+  margin: 5% auto;
+  background: #f9ede5;
+  position: relative;
+  font-style: italic;
+  line-height: 1.5;
+  font-weight: bold;
+  color: #5668ef;
+  text-decoration: none;
+  -webkit-border-radius: .626em;
+  -moz-border-radius: .626em;
+  border-radius: .626em;
+  padding:.626em;
+  border: 1px solid #333;
+  -webkit-box-shadow: 0px 0px 8px rgba(204, 207, 188, 1);
+  -moz-box-shadow: 0px 0px 8px rgba(204, 207, 188, 1);
+  box-shadow: 0px 0px 8px rgba(204, 207, 188, 1); 
+  overflow: hidden;
 }
 
-
-
 .success{
+  position: absolute;
     margin: 100px auto;
     float: left;
     width: 600px;
     height: 100px;
     background-color: green;
+    -webkit-animation: pulse 40s infinite alternate; 
+    -moz-animation: pulse 40s infinite alternate; 
+    animation: pulse 40s infinite alternate;
     color: white;
     text-align: center;
     font-size: 5em;
     text-transform: uppercase;
-    /* Rotate div */
     -ms-transform: rotate(-25deg)  skewX(25deg) ; /* IE 9 */
     -webkit-transform: rotate(-25deg)  skewX(25deg) ; /* Chrome, Safari, Opera */
-    transform: rotate(-25deg) skewX(25deg); 
+    transform: rotate(-25deg) skewX(25deg);
+    border: 1px solid #333;
+    -webkit-box-shadow: 0px 0px 8px rgba(204, 207, 188, 1);
+    -moz-box-shadow: 0px 0px 8px rgba(204, 207, 188, 1);
+    box-shadow: 0px 0px 8px rgba(204, 207, 188, 1); 
+  }
+
+@-webkit-keyframes pulse { 
+  0% {background-color: green;} 
+  25% {background-color: #fbb1b9;} 
+  50% {background-color: #fbf3b1;} 
+  75% {background-color: #b1b9fb;} 
+  100% {background-color: #d8cab4;} 
+} 
+
+.thanks {  
+  background-color: #fcfbE3;
+  position: absolute;
+  text-align: center;
+  top: 60%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-border-radius: .626em;
+  -moz-border-radius: .626em;
+  border-radius: .626em;
+  padding:.626em;
+  border: 1px solid #333;
+  -webkit-box-shadow: 0px 0px 8px rgba(204, 207, 188, 1);
+  -moz-box-shadow: 0px 0px 8px rgba(204, 207, 188, 1);
+  box-shadow: 0px 0px 8px rgba(204, 207, 188, 1); 
 }
 
+.thanks h1:hover {
+  transform: scale(2);
+  color: red;
+  -webkit-text-shadow:  -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  -moz-text-shadow:  -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  -webkit-transition: 2s ease-in-out;
+  -moz-transition: 2s ease-in-out;
+  -o-transition: 2s ease-in-out;
+  transition: 2s ease-in-out;
+}
 
-transform: rotate(80deg) skew(20deg);
-
-
-
-
- @media only screen and (min-width: 90em) {
-      body { 
-    background-color: #fff; 
-        width: 100%;
-      }
-  }
-@media only screen and (max-width: 30em) {
-      body { 
-    
-    width: 100%;
-      }
-  }
-
-  /* End Main page Background */
-
-
-  footer {
+footer {
    position:fixed;
-   left:0px;
-   bottom:0px;
-   height:30px;
-   width:100%;
-   background:#999;
-   padding-bottom: 20px;
+   left:8.313em;
+   bottom:.625em; 
+   height:1.875em;
+   width:80%;
+  text-align: center;
 }
-  
+
  
 
-   
 
-@media screen and (min-width: 1400px) {
-  html { 
+/* iPads (portrait) ----------- */
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait) {
+body {
+  max-width: 64em;
+  margin: 0 auto;
+}
+
+.success{
+display: none;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+html { 
     font-size: 1.25em; 
+  }
+}
+
+
+/* smartphones */
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+  html {
+    float: none;
+  }
+.success {
+  display: none;
+}
+body {
+  max-width: 320px;
+  margin: 0 auto;
   }
 }
 

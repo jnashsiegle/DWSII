@@ -11,9 +11,6 @@ Apricot - #fbceb1    (very soft orange)
 
 */
 
-
-
-
 					/* Utilities */
 
 .clearfix:before, .container:after { 
@@ -24,8 +21,6 @@ Apricot - #fbceb1    (very soft orange)
   clear: both; 
 }  
 /*  End Basic Utilities */
-
-
 
    /* Setting font sizes once and for all */
    
@@ -48,10 +43,6 @@ h3 {
 h4 { 
 	font-size: 1.2em; 
 }
-
-
-
-
 	/*End font sizing */
 
 html {
@@ -73,7 +64,7 @@ body {
 }
 
 .wrapper {
-  width: 100%;
+   width: 100%;
    margin: 0 auto;
 }
 
@@ -92,85 +83,85 @@ body, footer {
   /* Begin form specific styling */
 
 form    {
-background: #F9EDE5;
-font-style: italic;
-line-height: 1.5;
-font-weight: bold;
-color: #5668ef;
-text-decoration: none;
--webkit-border-radius: .626em;
--moz-border-radius: .626em;
-border-radius: .626em;
-padding:.626em;
-border: 1px solid #333;
--webkit-box-shadow: 0px 0px 8px rgba(204, 207, 188, 1);
--moz-box-shadow: 0px 0px 8px rgba(204, 207, 188, 1);
-box-shadow: 0px 0px 8px rgba(204, 207, 188, 1); 
+  background: #F9EDE5;
+  font-style: italic;
+  line-height: 1.5;
+  font-weight: bold;
+  color: #5668ef;
+  text-decoration: none;
+  -webkit-border-radius: .626em;
+  -moz-border-radius: .626em;
+  border-radius: .626em;
+  padding:.626em;
+  border: 1px solid #333;
+  -webkit-box-shadow: 0px 0px 8px rgba(204, 207, 188, 1);
+  -moz-box-shadow: 0px 0px 8px rgba(204, 207, 188, 1);
+  box-shadow: 0px 0px 8px rgba(204, 207, 188, 1); 
 }
 
   /*let's change default style of these inputs */
 
 input, textarea, select {
-background: rgb(254,255,255); /* Old browsers */
-background: -moz-linear-gradient(top,  rgba(254,255,255,1) 0%, rgba(247,247,244,1) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(254,255,255,1)), color-stop(100%,rgba(247,247,244,1))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  rgba(254,255,255,1) 0%,rgba(247,247,244,1) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  rgba(254,255,255,1) 0%,rgba(247,247,244,1) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  rgba(254,255,255,1) 0%,rgba(247,247,244,1) 100%); /* IE10+ */
-background: linear-gradient(to bottom,  rgba(254,255,255,1) 0%,rgba(247,247,244,1) 100%); /* W3C */
-border: 1px solid #b1b9fb;
--webkit-box-shadow: 0px 0px 8px rgba(204, 207, 188, 1);
--moz-box-shadow: 0px 0px 8px rgba(204, 207, 188, 1);
-box-shadow: 0px 0px 8px rgba(204, 207, 188, 1);
-margin-left: .800em;
+  background: rgb(254,255,255); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(254,255,255,1) 0%, rgba(247,247,244,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(254,255,255,1)), color-stop(100%,rgba(247,247,244,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(254,255,255,1) 0%,rgba(247,247,244,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(254,255,255,1) 0%,rgba(247,247,244,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(254,255,255,1) 0%,rgba(247,247,244,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(254,255,255,1) 0%,rgba(247,247,244,1) 100%); /* W3C */
+  border: 1px solid #b1b9fb;
+  -webkit-box-shadow: 0px 0px 8px rgba(204, 207, 188, 1);
+  -moz-box-shadow: 0px 0px 8px rgba(204, 207, 188, 1);
+  box-shadow: 0px 0px 8px rgba(204, 207, 188, 1);
+  margin-left: .800em;
 }
 
   /* on select let's put a red glow and make text inputs red, as well cancel default blue glow */
 
 input[type = "submit"]:hover, textarea:focus, input:focus, select:focus{
-border: 1px solid #ce719e;
--webkit-box-shadow: 0px 0px 8px rgba(206, 113, 147, 0.5);
--moz-box-shadow: 0px 0px 8px rgba(206, 113, 147, 0.5);
-box-shadow: 0 0 10px #ce719e;
-outline: none;
-color: red;
--moz-transition: 1s;
--webkit-transition: 1s;
--o-transition: 1s;
-transition: 1s;
+  border: 1px solid #ce719e;
+  -webkit-box-shadow: 0px 0px 8px rgba(206, 113, 147, 0.5);
+  -moz-box-shadow: 0px 0px 8px rgba(206, 113, 147, 0.5);
+  box-shadow: 0 0 10px #ce719e;
+  outline: none;
+  color: red;
+  -moz-transition: 1s;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
 }
 
   /* style for buttons */
 
 input[type="submit"]{
-width: 9em;
-right:1.250em;
-bottom:1.250em;
-background: rgb(249,244,245); /* Old browsers */
-background: -moz-linear-gradient(top,  rgba(249,244,245,1) 0%, rgba(177,185,251,1) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(249,244,245,1)), color-stop(100%,rgba(177,185,251,1))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  rgba(249,244,245,1) 0%,rgba(177,185,251,1) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  rgba(249,244,245,1) 0%,rgba(177,185,251,1) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  rgba(249,244,245,1) 0%,rgba(177,185,251,1) 100%); /* IE10+ */
-background: linear-gradient(to bottom,  rgba(249,244,245,1) 0%,rgba(177,185,251,1) 100%); /* W3C */
-color:#fff;
--webkit-text-shadow:  -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
--moz-text-shadow:  -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-height:1.875em;
-margin-left: .313em;
--webkit-border-radius: .626em;
--moz-border-radius: .626em;
-border-radius: .626em;
+  width: 9em;
+  right:1.250em;
+  bottom:1.250em;
+  background: rgb(249,244,245); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(249,244,245,1) 0%, rgba(177,185,251,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(249,244,245,1)), color-stop(100%,rgba(177,185,251,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(249,244,245,1) 0%,rgba(177,185,251,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(249,244,245,1) 0%,rgba(177,185,251,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(249,244,245,1) 0%,rgba(177,185,251,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(249,244,245,1) 0%,rgba(177,185,251,1) 100%); /* W3C */
+  color:#fff;
+  -webkit-text-shadow:  -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  -moz-text-shadow:  -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  height:1.875em;
+  margin-left: .313em;
+  -webkit-border-radius: .626em;
+  -moz-border-radius: .626em;
+  border-radius: .626em;
 }
 
 input[type="submit"]:hover {
-background:#b1b9fb;
-color:#fff;
-  -moz-transition: 1s;
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  transition: 1s;
+  background:#b1b9fb;
+  color:#fff;
+    -moz-transition: 1s;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
 }
 
   /* Style for password strength message */

@@ -37,7 +37,7 @@
 			  				
 			  				<fieldset>
 			  					<label for = "company">What is the name of your company?</label>
-			  						<input id = "company" type = "text" placeholder = "company name" autofocus = "on" required aria-required = "true">
+			  						<input id = "company" type = "text" placeholder = "company name" autofocus required aria-required = "true">
 			  				</fieldset>
 			  				
 			  				<fieldset>
@@ -100,9 +100,9 @@
 							
 							<fieldset>
 								<div class = "submit">
-									<p><a href = "">Reset</a>
-										<input class="submit_btn" name="submit" type="submit" value="Save" onclick="submit();" aria-required = "true"/>
-										<input class="submit_btn" name="submit" type="submit" value="Save and Quit" onclick="submit();" aria-required = "true" />
+									<p><a class = "btn" href = "">Reset</a>
+										<input class="submit_btn" name="submit" type="submit" value="Save" onclick="submit();" />
+										<input class="submit_btn" name="submit" type="submit" value="Save and Quit" onclick="submit();"  />
 									</p>
 								</div>
 							</fieldset>							
@@ -121,9 +121,9 @@
 								</fieldset>						
 								<fieldset><legend>Do you need any password protected areas?</legend>
 									<label for = "pwprot">Yes</label> 
-								    	<input type="radio" name="pwprot" value="yes" id = "pwprot" aria-required = "true">  
+								    	<input type="radio" name="pwprot" value="yes" id = "pwprot">  
 								    <label for = "pwprot1">No</label>
-								    	<input type="radio" name= "pwprot" value="no" id = "pwprot1" aria-required = "true">
+								    	<input type="radio" name= "pwprot" value="no" id = "pwprot1">
 								  </fieldset> 
 												
 							
@@ -131,41 +131,41 @@
 								
 								<fieldset><legend>Do you have the RGB or Hex numbers for your current company colors?</legend>
 								    <label for = "pantone">Yes</label>  
-								    	<input type="radio" name="pantone" value="yes" id = "pantone" aria-required = "true">  
+								    	<input type="radio" name="pantone" value="yes" id = "pantone">  
 								    <label for = "pantone1">No</label>
-								    	<input type="radio" name= "pantone" value="no" id = "pantone1" aria-required = "true"> <br />	
+								    	<input type="radio" name= "pantone" value="no" id = "pantone1"> <br />	
 									<label for = "favcolor">If yes, please show us your colors. </label><br />
-										 <input type="color" name="favcolor" id = "favcolor"><input type="color" name="favcolor"><input type="color" name="favcolor" aria-required = "true">
+										 <input type="color" name="favcolor" id = "favcolor"><input type="color" name="favcolor"><input type="color" name="favcolor">
 								</fieldset>	
 								
 								<fieldset><legend>Did you take a look at our portfolio?</legend>
 									<label for = "portfolio">Yes</label>  
-								    	<input type="radio" name="portfolio" value="yes" id = "portfolio" aria-required = "true">  
+								    	<input type="radio" name="portfolio" value="yes" id = "portfolio">  
 								    <label for = "portfolio1">No</label>
-								    	<input  type="radio" name= "portfolio" value="no" id = "portfolio1" aria-required = "true"> 	
+								    	<input  type="radio" name= "portfolio" value="no" id = "portfolio1"> 	
 								</fieldset>
 							
 								<fieldset><legend>What is your timeframe?</legend>
 									<label for = "time">1 Month</label> 
-								    	<input type="radio" name="time" value="month" id = "time" aria-required = "true">  
+								    	<input type="radio" name="time" value="month" id = "time">  
 								    <label for = "time1">3 Months</label> 
-								    	<input type="radio" name= "time" value="months" id = "time1" aria-required = "true">  
+								    	<input type="radio" name= "time" value="months" id = "time1">  
 								    <label for = "time2">6 Months</label> 
-								    	<input type="radio" name= "time" value="months" id = "time2" aria-required = "true">  
+								    	<input type="radio" name= "time" value="months" id = "time2">  
 								    <label for = "time3">1 year</label>  
-								    	<input type="radio" name= "time" value="year" id = "time3" aria-required = "true"> 								    
+								    	<input type="radio" name= "time" value="year" id = "time3"> 								    
 								</fieldset>
 							
 								<fieldset>
 									<legend>Is this a brocure site or a blog? (Check all that apply)</legend>
 								 	<label for = "brochure">Brochure</label>  
-								    	<input type="checkbox" name="brochure" value="brochure" id = "brochure" aria-required = "true"> 
+								    	<input type="checkbox" name="brochure" value="brochure" id = "brochure" > 
 								     <label for = "blog">Blog</label>
 								    	<input type="checkbox" name="blog" value="blog" id = "blog">  
 									<label for = "website">Website</label> 
-								    	<input type="checkbox" name="website" value="website" id = "website" aria-required = "true"> 
+								    	<input type="checkbox" name="website" value="website" id = "website"> 
 									<label for = "app">Mobile App</label> 
-								    	<input type="checkbox" name="app" value="app" id = "app" aria-required = "true">
+								    	<input type="checkbox" name="app" value="app" id = "app">
 								  </fieldset> 
 							
 								<fieldset>
@@ -177,8 +177,8 @@
 							<div class = "submit">
 								<fieldset>
 									<p><a href = "">Reset</a>
-										<input class="submit_btnsubmit_btn" name="submit" type="submit" value="Save" onclick="submit();" aria-required = "true"/>
-										<input class="submit_btn" name="submit" type="submit" value="Save and Quit" onclick="submit();" aria-required = "true"/>
+										<input class="submit_btnsubmit_btn" name="submit" type="submit" value="Save" onclick="submit();" />
+										<input class="submit_btn" name="submit" type="submit" value="Save and Quit" onclick="submit();" />
 									</p>
 								</fieldset>
 							</div>
@@ -193,49 +193,49 @@
 								<fieldset>
 									<legend>Are you familiar with usability testing?</legend>
 									<label for = "usability">Yes</label>
-										  <input class="yes" type="radio" name="usability" value="yes" id = "usability" aria-required = "true">  
+										  <input class="yes" type="radio" name="usability" value="yes" id = "usability">  
 									<label for = "usability1">No</label>
-									       <input class="no" type="radio" name= "usability" value="no" id = "usability1" aria-required = "true">  
+									       <input class="no" type="radio" name= "usability" value="no" id = "usability1">  
 								</fieldset>	
 								
 								<fieldset>
 									<legend>Do you have your content prepared?</legend>
 									<label for = "content">Yes</label>
-									    	<input class="yes" type="radio" name="content" value="yes" id = "content" aria-required = "true">  
+									    	<input class="yes" type="radio" name="content" value="yes" id = "content">  
 									 <label for = "content1">No</label>
-									    	<input class="no" type="radio" name= "content" value="no" id = "content1" aria-required = "true">  
+									    	<input class="no" type="radio" name= "content" value="no" id = "content1">  
 								</fieldset>
 								
 								<fieldset><legend>Do you want to maintain your own site?</legend>
 									  <label for = "maintain">Yes</label>
-								    		<input class="yes" type="radio" name="maintain" value="yes" id = "maintain" aria-required = "true">  
+								    		<input class="yes" type="radio" name="maintain" value="yes" id = "maintain">  
 								      <label for = "maintain1">No</label>
-								    		<input class="no" type="radio" name= "maintain" value="no" id = "maintain1" aria-required = "true">  
+								    		<input class="no" type="radio" name= "maintain" value="no" id = "maintain1">  
 								   </fieldset>
 							
 								    <fieldset><legend>If no, would you like us to do so for you?</legend>
 										<label for = "maintain2">Yes</label>
-								    		<input class="yes" type="radio" name="maintain" value="yes" id = "maintain2" aria-required = "true">  
+								    		<input class="yes" type="radio" name="maintain" value="yes" id = "maintain2">  
 								   		<label for = "maintain3">No</label>
-								    		<input class="no" type="radio" name= "maintain" value="no" id = "maintain3" aria-required = "true">  
+								    		<input class="no" type="radio" name= "maintain" value="no" id = "maintain3">  
 								   	</fieldset>
 							
 
 									<fieldset><legend>Do you need any social media tools built in and if so, which ones? (Check all that apply)</legend>
 										<label for = "digg">Digg</label>
-								    		<input type="checkbox" name="Digg" value="Digg" id = "digg" aria-required = "true">  
+								    		<input type="checkbox" name="Digg" value="Digg" id = "digg">  
 								       	<label for = "facebook">Facebook</label>
-								    		<input type="checkbox" name="Facebook" value="Facebook" id = "facebook" aria-required = "true">  
+								    		<input type="checkbox" name="Facebook" value="Facebook" id = "facebook">  
 								       	<label for = "twitter">Twitter</label>
-								    		<input type="checkbox" name="Twitter" value="Twitter" id = "twitter" aria-required = "true">  
+								    		<input type="checkbox" name="Twitter" value="Twitter" id = "twitter">  
 								    	<label for = "instagram">Instagram</label> 
-								    		<input type="checkbox" name="Instagram" value="Instagram" id = "instagram" aria-required = "true">  
+								    		<input type="checkbox" name="Instagram" value="Instagram" id = "instagram">  
 								    	<label for = "linkedin">Linkedin</label>
-								    		<input type="checkbox" name="Linkedin" value="Linkedin" id = "linkedin" aria-required = "true">  
+								    		<input type="checkbox" name="Linkedin" value="Linkedin" id = "linkedin">  
 								    	<label for = "pinterest">Pinterest</label>
-								    	    <input type="checkbox" name="Pinterest" value="Pinterest" id = "pinterest" aria-required = "true">  
+								    	    <input type="checkbox" name="Pinterest" value="Pinterest" id = "pinterest">  
 								    	<label for = "google">Google+</label>
-								    	    <input type="checkbox" name="Google+" value="Google+" id = "google" aria-required = "true">
+								    	    <input type="checkbox" name="Google+" value="Google+" id = "google">
 								    </fieldset>
 
 								    <fieldset><legend>What is your budget?</legend>
@@ -259,8 +259,8 @@
 
 							<div class= "submit">
 								<p><a href = "">Reset</a>
-								<input class="submit_btn" name="submit" type="submit" value="Save" onclick="submit();" aria-required = "true"/>
-								<input class="submit_btn" name="submit" type="submit" value="Save and Submit" onclick="submit();" aria-required = "true" />
+								<input class="submit_btn" name="submit" type="submit" value="Save" onclick="submit();" />
+								<input class="submit_btn" name="submit" type="submit" value="Save and Submit" onclick="submit();"  />
 								</p>
 							</div>
 					</fieldset>
