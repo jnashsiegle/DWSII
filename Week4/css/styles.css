@@ -9,78 +9,128 @@ body{
     overflow: hidden;
     position: relative;
 }
-	/*slideshow CSS */
-
-.container{
-	position: relative;
-	text-align: center;
-}
-.container > header{	
-	position: relative;
-	display: block;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
-    text-align: left;
-}
-.container > header h1{
-	position: relative;
-	font-weight: 400;
-	color: #fff;
-	background-color: yellow;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);    
-}
-:-webkit-any(article,aside,nav,section) h1 {
-font-size: 1.5em;
--webkit-margin-before: 0px;
--webkit-margin-after: 0px;
-}
-
+	
 	/* Lets reset this annoying user agent */
-ul, menu, dir {
+ul, dir {
 display: block;
 list-style-type: none;
--webkit-margin-before: 1em;
--webkit-margin-after: 1em;
+position: absolute;
+-webkit-margin-before: 0em;
+-webkit-margin-after: 0em;
 -webkit-margin-start: 0px;
 -webkit-margin-end: 0px;
 -webkit-padding-start: 0px;
 }
-
+.clearfix:before,  
+.clearfix:after {  
+    content: " ";  
+    display: table;  
+}  
+.clearfix:after {  
+    clear: both;  
+}  
 
 /* Navigation */
 
-.navTop{
-	font-family: Arial, sans-serif;
-	margin-top: 0px;
-	line-height: 1.5;
-	font-size: .75em;
+nav {
+	height: 40px;
 	width: 100%;
-	background: #000;	
-	opacity: 0.9;
-	overflow: hidden;
-	text-transform: uppercase;
-	z-index: 9999;
+	background: #455868;
+	font-size: 11pt;
+	font-family: 'PT Sans', Arial, sans-serif;
+	font-weight: bold;
 	position: relative;
-	-moz-box-shadow: 1px 0px 2px #000;
-	-webkit-box-shadow: 1px 0px 2px #000;
-	box-shadow: 1px 0px 2px #000;
+	border-bottom: 2px solid #283744;
 }
-
-.navTop a{
-	padding: 0px 10px;
-	letter-spacing: 1px;
-	text-decoration: none;
-	color: #ddd;
-	display: block;
+nav ul {
+	padding: 0;
+	margin: 0 auto;
+	width: 600px;
+	height: 40px;
+}
+nav li {
+	display: inline;
 	float: left;
 }
-.navTop a:hover{
-	color: #fff;
+nav a {  
+    color: #fff;  
+    display: inline-block;  
+    width: 100px;  
+    text-align: center;  
+    text-decoration: none;  
+    line-height: 40px;  
+    text-shadow: 1px 1px 0px #283744;  
+}  
+nav li a {  
+    border-right: 1px solid #576979;  
+    box-sizing:border-box;  
+    -moz-box-sizing:border-box;  
+    -webkit-box-sizing:border-box;  
+}  
+nav li:last-child a {  
+    border-right: 0;  
+}  
+nav a:hover, nav a:active {  
+    background-color: #8c99a4;  
+} 
+nav a#pull {  
+    display: none;  
 }
-
-ul.navTop li{	
-	display: inline;
+/*Styles for screen 600px and lower*/
+@media screen and (max-width: 600px) {  
+    nav {   
+        height: auto; 
+    }  
+    nav ul {  
+        width: 100%;  
+        display: block;  
+        height: auto;  
+    }  
+    nav li {  
+        width: 50%;  
+        float: left;  
+        position: relative;  
+    }  
+    nav li a {  
+    	display: block;
+        border-bottom: 1px solid #576979;  
+        border-right: 1px solid #576979;  
+    }  
+    nav a {  
+        text-align: left;  
+        width: 100%;  
+        text-indent: 25px;  
+    }  
+} 
+/*Styles for screen 515px and lower*/
+@media only screen and (max-width : 480px) {
+	nav {
+		border-bottom: 0;
+	}
+	nav ul {
+		display: none;
+		margin-top: 35px;
+		height: auto;
+	}
+	nav a#pull {
+		display: block;
+		background-color: #283744;
+		width: 100%;
+		position: relative;
+		float: none;
+	}
 }
-
+/*Smartphone*/
+@media only screen and (max-width : 320px) {
+	nav li {
+		display: block;
+		float: none;
+		width: 100%;
+	}
+	nav li a {
+		border-bottom: 1px solid #576979;
+	}
+}
 /*Slideshow */
 
 .lpSlideshow,
@@ -94,7 +144,6 @@ ul.navTop li{
 }
 .lpSlideshow:after { 
     content: '';    
-	
 }
 .lpSlideshow li span { 
     width: 100%;
@@ -129,7 +178,6 @@ ul.navTop li{
     -o-animation: titleAnimation 42s linear infinite 0s;
     -ms-animation: titleAnimation 42s linear infinite 0s;
     animation: titleAnimation 42s linear infinite 0s; 
-    
 }
 .lpSlideshow li div h3 { 
     font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
@@ -187,7 +235,6 @@ ul.navTop li{
     -ms-animation-delay: 30s;
     animation-delay: 30s; 
 }
-
 .lpSlideshow li:nth-child(7) span {
 	background-image: url(../images/wisteria.jpg);
 	-webkit-animation-delay: 36s;
@@ -195,6 +242,13 @@ ul.navTop li{
 	-o-animation-delay: 36s;
 	-ms-animation-delay: 36s;
 	animation-delay: 36s;
+}
+.lpSlideshow li:nth-child(1) div { 
+    -webkit-animation-delay: 0s;
+    -moz-animation-delay: 0s;
+    -o-animation-delay: 0s;
+    -ms-animation-delay: 0s;
+    animation-delay: 0s; 
 }
 .lpSlideshow li:nth-child(2) div { 
     -webkit-animation-delay: 6s;
@@ -238,7 +292,6 @@ ul.navTop li{
 	-ms-animation-delay: 36s;
 	animation-delay: 36s;
 }
-
 
 /* Animation for the slideshow images */
 @-webkit-keyframes imageAnimation { 
@@ -326,15 +379,6 @@ ul.navTop li{
 .no-cssanimations .lpSlideshow li span{
 	opacity: 1;
 }
-
-/* Media Queries */
-@media screen and (max-width: 767px) {
-    .container > header{
-        text-align: center;
-    }
-}
-
-
 @media screen and (max-width: 1140px) { 
     .lpSlideshow li div h3 { font-size: 3em }
 }
