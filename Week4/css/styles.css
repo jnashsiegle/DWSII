@@ -1,17 +1,21 @@
-/* General Demo Style */
+/*  RGB Colors 
+
+Dark Purple - menu #340247
+Light Purple - hover menu 7b3497
+*/
 body{
     font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
     width: 100%;
     margin: 0 auto;
     background: #000;
     font-weight: 100;
-    color: #aa3e03;
+    color: #fff;
     overflow: hidden;
     position: relative;
 }
 	
 	/* Lets reset this annoying user agent */
-ul, dir {
+ul  {
 display: block;
 list-style-type: none;
 position: absolute;
@@ -35,9 +39,9 @@ position: absolute;
 nav {
 	height: 40px;
 	width: 100%;
-	background: #455868;
+	background: #340247;
 	font-size: 11pt;
-	font-family: 'PT Sans', Arial, sans-serif;
+	font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
 	font-weight: bold;
 	position: relative;
 	border-bottom: 2px solid #283744;
@@ -71,7 +75,7 @@ nav li:last-child a {
     border-right: 0;  
 }  
 nav a:hover, nav a:active {  
-    background-color: #8c99a4;  
+    background-color: #7b3497;  
 } 
 nav a#pull {  
     display: none;  
@@ -114,7 +118,7 @@ nav a#pull {
 	}
 	nav a#pull {
 		display: block;
-		background-color: #283744;
+		background-color: #340247;
 		width: 100%;
 		position: relative;
 		float: none;
