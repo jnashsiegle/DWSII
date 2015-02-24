@@ -46,6 +46,12 @@ nav {
 	position: relative;
 	border-bottom: 2px solid #283744;
 }
+nav h1 {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.5em;
+    line-height: 1.5;
+}
 nav ul {
 	padding: 0;
 	margin: 0 auto;
@@ -60,6 +66,7 @@ nav a {
     color: #fff;  
     display: inline-block;  
     width: 100px;  
+    background: #340247;
     text-align: center;  
     text-decoration: none;  
     line-height: 40px;  
@@ -123,11 +130,11 @@ nav a#pull {
     text-align: center;
     opacity: 0;
     color: #fff;
-    -webkit-animation: titleAnimation 42s linear infinite 0s;
-    -moz-animation: titleAnimation 42s linear infinite 0s;
-    -o-animation: titleAnimation 42s linear infinite 0s;
-    -ms-animation: titleAnimation 42s linear infinite 0s;
-    animation: titleAnimation 42s linear infinite 0s; 
+    -webkit-animation: titleAnimation 36s linear infinite 0s;
+    -moz-animation: titleAnimation 36s linear infinite 0s;
+    -o-animation: titleAnimation 36s linear infinite 0s;
+    -ms-animation: titleAnimation 36s linear infinite 0s;
+    animation: titleAnimation 36s linear infinite 0s; 
 }
 .lpSlideshow li div h3 { 
     font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
@@ -144,11 +151,6 @@ nav a#pull {
 }
 .lpSlideshow li:nth-child(1) span { 
     background-image: url(../images/antelope.jpg);
-    -webkit-animation-delay: 0s;
-    -moz-animation-delay: 0s;
-    -o-animation-delay: 0s;
-    -ms-animation-delay: 0s;
-    animation-delay: 0s; 
 }
 .lpSlideshow li:nth-child(2) span { 
     background-image: url(../images/bambooforest.jpg);
@@ -198,13 +200,14 @@ nav a#pull {
 	-ms-animation-delay: 36s;
 	animation-delay: 36s;
 }
-.lpSlideshow li:nth-child(1) div { 
+/*.lpSlideshow li:nth-child(1) div {   /*unsure how to keep it from shadowing wisteria at this time
     -webkit-animation-delay: 0s;
     -moz-animation-delay: 0s;
     -o-animation-delay: 0s;
     -ms-animation-delay: 0s;
     animation-delay: 0s; 
-}
+} */
+
 .lpSlideshow li:nth-child(2) div { 
     -webkit-animation-delay: 6s;
     -moz-animation-delay: 6s;
@@ -348,7 +351,7 @@ nav a#pull {
         height: auto;  
     }  
     nav li {  
-        width: 50%;  
+        width: 100%;  
         float: left;  
         position: relative;  
     }  
@@ -371,7 +374,7 @@ nav a#pull {
     }
     nav ul {
         display: none;
-        margin-top: 35px;
+        margin-top: 70px;
         height: auto;
     }
     nav a#pull {
