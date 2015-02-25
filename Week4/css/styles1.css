@@ -5,7 +5,7 @@ body,
 html, blockquote {
   margin:0;
   padding:0;
-  line-height: 2;
+  line-height: 1.5;
   color:#939393;
   background:#fff;
   font-size: 16px;
@@ -36,7 +36,15 @@ h1{
 }  
 h2{  
     font-size: 2.1em;  
-    line-height: 1.9em;  
+    line-height: 1.9em; 
+    border-radius: 30px;
+    background: rgb(217,217,217); /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, rgba(217,217,217,1) 0%, rgba(255,255,255,1) 57%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(217,217,217,1)), color-stop(57%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(217,217,217,1) 0%,rgba(255,255,255,1) 57%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover, rgba(217,217,217,1) 0%,rgba(255,255,255,1) 57%,rgba(255,255,255,1) 100%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover, rgba(217,217,217,1) 0%,rgba(255,255,255,1) 57%,rgba(255,255,255,1) 100%); /* IE10+ */
+    background: radial-gradient(ellipse at center, rgba(217,217,217,1) 0%,rgba(255,255,255,1) 57%,rgba(255,255,255,1) 100%); /* W3C */
 }  
 h3{  
     font-size: 1.8em;  
@@ -120,8 +128,11 @@ video {
 .img {
     position: relative;
     float: left;
+    display: inline-block;
     width:  200px;
     height: 200px;
+    border: 2px solid #696969;
+    border-radius: 20px;
     -webkit-box-shadow:
             inset 0 0 50px #000,
                 inset 0 0 50px #000,
@@ -156,21 +167,21 @@ video {
 /*Add a vignette to the galleries*/
 .vignette {
   
-    width: 400px; height: 200px;
+    width: 200px; height: 200px;
     -webkit-box-shadow:
-            inset 0 0 50px #000,
-                inset 0 0 50px #000,
-                inset 0 0 50px #000;
+            inset 0 0 50px #d9d9d9,
+                inset 0 0 50px #d9d9d9,
+                inset 0 0 50px #d9d9d9;
    
      -moz-box-shadow:
-            inset 0 0 50px #000,
-                inset 0 0 50px #000,
-                inset 0 0 50px #000;
+            inset 0 0 50px #d9d9d9,
+                inset 0 0 50px #d9d9d9,
+                inset 0 0 50px #d9d9d9;
    
           box-shadow:
-            inset 0 0 50px #000,
-                inset 0 0 50px #000,
-                inset 0 0 50px #000;
+            inset 0 0 50px #d9d9d9,
+                inset 0 0 50px #d9d9d9,
+                inset 0 0 50px #d9d9d9;
 }
 
 article > h1:nth-child(1), blockquote::before, h2#introQuotes{
@@ -179,8 +190,10 @@ article > h1:nth-child(1), blockquote::before, h2#introQuotes{
   text-decoration: none;
   color: #f0f0f0;
   font-size:2.5em;
-  
-  
+}
+p.last {
+  margin-bottom: 30px;
+  clear: right;
 }
 
 /*Second Column*/
