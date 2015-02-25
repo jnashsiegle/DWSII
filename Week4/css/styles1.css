@@ -159,11 +159,11 @@ background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0
     -webkit-transform: scale(1,2); /* Chrome, Safari, Opera */
     transform: scale(1.25);
 }
-section {
-  
-  padding:5px;
+section {  
+    padding:5px;
     border:dashed 3px #0026ff;
-    margin-top:5px;
+    margin-top:15px;
+    clear: both;
 }
  /*Image Styling for Section Galleries*/
  .gallery {
@@ -174,11 +174,9 @@ section {
   background-color: #fff;
   width: auto;
   float: left;
-  position: absolute;  
+  position: relative;  
   vertical-align: middle;
   border-radius: 30px;
-  overflow: hidden;
-  
 }
 .img {
     position: relative;
@@ -239,7 +237,6 @@ section {
             inset 0 0 50px #696969,
                 inset 0 0 50px #696969,
                 inset 0 0 50px #696969;
-
 }
 
 article > h1:nth-child(1), blockquote::before, h2#introQuotes{
@@ -263,7 +260,7 @@ p.last {
   position: relative;
   padding-left:20px;
   margin-bottom: 40px;
-  margin-top:250px;
+  margin-top:20px;
 }
 .location:first-of-type {
   margin-top: 25px;
@@ -274,7 +271,6 @@ aside {
   width: 30%;
   margin: 0 auto;
   float: right;
-  
 }
 #quoteGallery {
     width:100%;
@@ -286,19 +282,13 @@ blockquote{
   padding: 15px 20px 15px 45px;
   margin: 0 0 20px;
   position: relative;
-  
-  /*Font*/
-  font-family: Georgia, serif;
+  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
   font-size: 16px;
   line-height: 1.2;
   color: #666;
   text-align: justify;
-  
-  /*Borders*/
   border-left: 15px solid #696969;
   border-right: 2px solid #696969;
-  
-  /*Box Shadow*/
   -moz-box-shadow: 2px 2px 15px #ccc;
   -webkit-box-shadow: 2px 2px 15px #ccc;
   box-shadow: 2px 2px 15px #ccc;
@@ -306,8 +296,6 @@ blockquote{
 
 blockquote::before{
   content: "\201C"; /*Unicode for Left Double Quote*/
-  
-  
   /*Positioning*/
   position: absolute;
   left: 10px;
