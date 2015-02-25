@@ -7,7 +7,12 @@ html, blockquote {
   padding:0;
   line-height: 1.5;
   color:#939393;
-  background:#ececec;
+  background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(236,236,236,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,1)), color-stop(100%,rgba(236,236,236,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(236,236,236,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(236,236,236,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(236,236,236,0) 100%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(236,236,236,0) 100%); /* W3C */
   font-size: 16px;
   font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;  }
 
@@ -74,7 +79,9 @@ header {
 }
 
 video {
-  max-width: 33.750em;  
+  max-width: 33.750em;
+  margin-top:275px;  
+  margin-left: 15px;
   margin-right: 40px;
   margin-bottom: 30px;
   float: left;
@@ -107,9 +114,13 @@ video {
   line-height: 1.5em;
 }
   /*Navigation*/
-#nav {
-    list-style:none;
+#nav ul{
+  background-color: black;
+    overflow: hidden;
+    list-style:none;    
     clear: both;
+    padding: 0;
+    margin: 0;
 }
 #nav li {
     float: right;
@@ -118,7 +129,7 @@ video {
     margin: 1em;
 }
 #nav li a {    
-    display: inline;   
+    display: block;   
    text-shadow:
        3px 3px 0 rgba(105,105,105, 0.5),
      -1px -1px 0 rgba(105,105,105, 0.5),  
@@ -126,7 +137,16 @@ video {
       -1px 1px 0 rgba(105,105,105, 0.5),
        1px 1px 0 rgba(105,105,105, 0.5);  
     text-decoration: none;
-    color: #fff;     
+    color: #fff;
+    border: 0.1em solid #dcdce9;
+    border-radius: 10px;
+    padding: 5px;
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C */     
     margin-top: 0.67em;
     margin-right: 0px;
     margin-bottom: 0.67em;
@@ -137,9 +157,16 @@ video {
 #nav li a:hover {
     margin-top: 2px;
     color: #0f0f0f;
-    -ms-transform: scale(2,4); /* IE 9 */
-    -webkit-transform: scale(2,4); /* Chrome, Safari, Opera */
-    transform: scale(2,4);
+    -ms-transform: scale(1,2); /* IE 9 */
+    -webkit-transform: scale(1,2); /* Chrome, Safari, Opera */
+    transform: scale(1.25);
+}
+h2:before { 
+  display: block; 
+  content: " "; 
+  margin-top: -285px; 
+  height: 285px; 
+  visibility: hidden; 
 }
  /*Image Styling for Section Galleries*/
  .gallery {
