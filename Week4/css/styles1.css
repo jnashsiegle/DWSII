@@ -288,7 +288,8 @@ blockquote::after{
 }
 footer {
   clear:both;
-  background:#fff;
+  color: #fff;
+  background:#cecece;
 }
 
 /* Media Queries */
@@ -341,8 +342,7 @@ section h1 {
   }
   video {
     display: none;
-  }
-  
+  }  
 }  
 /* iPads (portrait and landscape) ----------- */  
 @media only screen and (min-width : 480px) and (max-width : 900px) {  
