@@ -107,6 +107,7 @@ video {
     margin: 0 auto;
     border-bottom: 2px dotted  #000;
     padding-bottom: 20px;
+    padding-right: 20px;
     clear: right;    
 }
 #intro  p{
@@ -175,12 +176,14 @@ h2:before {
   -moz-box-shadow: 10px 10px 5px 0px rgba(105,105,105, 0.5);
   box-shadow: 10px 10px 5px 0px rgba(105,105,105, 0.5);
   background-color: #fff;
-  width: 100%;  
+  width: auto;
+  float: left;
+  position: absolute;  
   vertical-align: middle;
   border-radius: 30px;
-  margin:0 auto;
-  padding: 0 8.5%;
+  margin-bottom: 150px;
   overflow: hidden;
+
 }
 .img {
     position: relative;
@@ -262,7 +265,16 @@ p.last {
 }
 .location {
   float:left;
+  position: relative;
+  padding-left:20px;
   margin-bottom: 40px;
+  margin-top:250px;
+}
+.location:first-of-type {
+  margin-top: 25px;
+}
+section > h1{
+  margin-top:100px;
 }
 /*Second Column*/
 aside {
