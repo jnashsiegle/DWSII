@@ -70,41 +70,41 @@ header {
 }
 video {
   max-width: 33.750em;
-  margin-top:20px;  
-  margin-left: 15px;
-  margin-right: 40px;
-  margin-bottom: 30px;
+  margin-top:1.250em;  
+  margin-left: 0.938em;
+  margin-right: 2.500em;
+  margin-bottom: 1.875em;
   float: left;
   -webkit-box-shadow:
-            0px 0px 0px 2px rgba(105,105,105, 0.5),
-                0px 0px 0px 14px #fff,
-                0px 0px 0px 18px rgba(105,105,105, 0.2),
-                6px 6px 8px 17px #555;
+            0px 0px 0px 0.125em rgba(105,105,105, 0.5),
+                0px 0px 0px 0.875em #fff,
+                0px 0px 0px 1.125em rgba(105,105,105, 0.2),
+                0.375em 0.375em 8px 1.063em #555;
    
      -moz-box-shadow:
-            0px 0px 0px 2px rgba(105,105,105, 0.5),
-                0px 0px 0px 14px #fff,
-                0px 0px 0px 18px rgba(105,105,105, 0.2),
-                6px 6px 8px 17px #555;
+            0px 0px 0px 0.125em rgba(105,105,105, 0.5),
+                0px 0px 0px 0.875em #fff,
+                0px 0px 0px 1.125em rgba(105,105,105, 0.2),
+                0.375em 0.375em 8px 1.063em #555;
    
           box-shadow:
-            0px 0px 0px 2px rgba(105,105,105, 0.5),
-                0px 0px 0px 14px #fff,
-                0px 0px 0px 18px rgba(105,105,105, 0.2),
-                6px 6px 8px 17px #555;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
+            0px 0px 0px 0.125em rgba(105,105,105, 0.5),
+                0px 0px 0px 0.875em #fff,
+                0px 0px 0px 1.125em rgba(105,105,105, 0.2),
+                0.375em 0.375em 8px 1.063em #555;
+  -webkit-border-radius: 0.313em;
+  -moz-border-radius: 0.313em;
+  border-radius: 0.313em;
 }
 #intro {
     margin: 0 auto;
-    border-bottom: 2px dotted  #000;
+    border-bottom: 0.125em double  #696969;
     padding-bottom: 1.250em;
     padding-right: 1.250em;
     clear: right;    
 }
 #intro  p{
-  margin-left: 50px;
+  margin-left: 3.125em;
   line-height: 1.5em;
 }
   /*Navigation*/
@@ -133,10 +133,10 @@ video {
     text-decoration: none;
     color: #fff;
     border: 0.1em solid #dcdce9;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    padding: 5px;
+    -webkit-border-radius: 0.625em;
+    -moz-border-radius: 0.625em;
+    border-radius: 0.625em;
+    padding: 0.313em;
     background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
     background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
@@ -151,20 +151,20 @@ video {
     
 }
 #nav li a:hover {
-    margin-top: 2px;
+    margin-top: 0.125em;
     color: #0f0f0f;
     -ms-transform: scale(1,2); /* IE 9 */
     -webkit-transform: scale(1,2); /* Chrome, Safari, Opera */
     transform: scale(1.25);
 }
 section {  
-    padding:5px;
-    margin-top:15px;
+    padding:0.313em;
+    margin-top:0.938em;
     clear: both;
 }
 section h1 {
   text-align: center;
-  letter-spacing: 5px;
+  letter-spacing: 0.313em;
   -ms-transform: skew(-10deg,-15deg); /* IE 9 */
   -webkit-transform: skew(-10deg,-15deg); /* Chrome, Safari, Opera */
   transform: skew(-10deg,-15deg);
@@ -174,45 +174,45 @@ section h1 {
 }
  /*Image Styling for Section Galleries*/
  .gallery {
-  border:2px solid #d9d9d9;  
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(105,105,105, 0.5);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(105,105,105, 0.5);
-  box-shadow: 10px 10px 5px 0px rgba(105,105,105, 0.5);
+  border:0.125em solid #d9d9d9;  
+  -webkit-box-shadow: 0.625em 0.625em 0.313em 0px rgba(105,105,105, 0.5);
+  -moz-box-shadow: 0.625em 0.625em 0.313em 0px rgba(105,105,105, 0.5);
+  box-shadow: 0.625em 0.625em 0.313em 0px rgba(105,105,105, 0.5);
   background-color: #fff;
   width: auto;
   float: left;
   position: relative;  
   vertical-align: middle;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;
+  -webkit-border-radius: 1.875em;
+  -moz-border-radius: 1.875em;
+  border-radius: 1.875em;
 }
 .img {
     position: relative;
     float: left;
-    margin:10px;
-    width: 200px; height: 200px;
+    margin:0.625em;
+    width: 12.500em; height: 12.500em;
     display: inline-block;
-    width:  200px;
-    height: 200px;
+    width:  12.500em;
+    height: 12.500em;
     border: 2px solid #696969;
     -webkit-border-radius: 1.250em;
     -moz-border-radius: 1.250em;
     border-radius: 1.250em;
     -webkit-box-shadow:
-            inset 0 0 50px #696969,
-                inset 0 0 50px #696969,
-                inset 0 0 50px #696969;
+            inset 0 0 3.125em #696969,
+                inset 0 0 3.125em #696969,
+                inset 0 0 3.125em #696969;
    
      -moz-box-shadow:
-            inset 0 0 50px #696969,
-                inset 0 0 50px #696969,
-                inset 0 0 50px #696969;
+            inset 0 0 3.125em #696969,
+                inset 0 0 3.125em #696969,
+                inset 0 0 3.125em #696969;
    
           box-shadow:
-            inset 0 0 50px #696969,
-                inset 0 0 50px #696969,
-                inset 0 0 50px #696969;
+            inset 0 0 3.125em #696969,
+                inset 0 0 3.125em #696969,
+                inset 0 0 3.125em #696969;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size:cover;
@@ -221,14 +221,14 @@ section h1 {
 /*Special Styling for Each Section main image */
 .img.polaroid {  
     border:solid #fff;  
-    margin-right: 40px;
-    margin-bottom: 10px;
-    border-width:6px 6px 1.250em 6px;  
-    box-shadow:1px 1px 10px #333; /* Standard blur at 5px. Increase for more depth */  
-    -webkit-box-shadow:1px 1px 5px #696969;  
-    -moz-box-shadow:1px 1px 5px #696969;  
-    height:200px; 
-    width:200px; 
+    margin-right: 2.500em;
+    margin-bottom: 0.625em;
+    border-width:0.375em 0.375em 1.250em 0.375em;  
+    box-shadow:1px 1px 0.625em #333;   
+    -webkit-box-shadow:1px 1px 0.313em #696969;  
+    -moz-box-shadow:1px 1px 0.313em #696969;  
+    height:12.500em; 
+    width:12.500em; 
 }  
 article > h1:nth-child(1), blockquote::before, h2#introQuotes{
   text-align: center;
@@ -243,14 +243,14 @@ article > h1:nth-child(1), blockquote::before, h2#introQuotes{
   font-size:2.5em;
 }
 p.last {
-  margin-bottom: 30px;
+  margin-bottom: 1.875em;
   clear: right;
 }
 .location {
   float:left;
   position: relative;
   padding-left:1.250em;
-  margin-bottom: 40px;
+  margin-bottom: 2.500em;
   margin-top:1.250em;
 }
 /*Second Column*/
@@ -265,22 +265,22 @@ aside {
 blockquote{
   display:block;
   background: #fff;
-  padding: 15px 1.250em 15px 45px;
+  padding: 0.938em 1.250em 0.938em 45px;
   margin: 0 1.250em 1.250em;
   position: relative;
   text-align: justify;
-  border-left: 15px solid #696969;
-  border-right: 2px solid #696969;
-  -moz-box-shadow: 2px 2px 15px #ccc;
-  -webkit-box-shadow: 2px 2px 15px #ccc;
-  box-shadow: 2px 2px 15px #ccc;  
+  border-left: 0.938em solid #696969;
+  border-right: 0.125em solid #696969;
+  -moz-box-shadow: 2px 2px 0.938em #ccc;
+  -webkit-box-shadow: 2px 2px 0.938em #ccc;
+  box-shadow: 2px 2px 0.938em #ccc;  
 }
 blockquote::before{
   content: "\201C"; /*Unicode for Left Double Quote*/
   /*Positioning*/
   position: absolute;
-  left: 10px;
-  top:5px;
+  left: 0.625em;
+  top:0.313em;
 }
 blockquote::after{
   /*Reset to make sure*/
@@ -295,6 +295,34 @@ footer {
 
 /* Smartphones (portrait and landscape) ----------- */  
 @media only screen and (min-width : 320px) and (max-width : 480px) {  
+  #nav {   
+        height: auto; 
+    }  
+    #nav ul {  
+        width: 100%;  
+        display: block;  
+        height: auto;  
+    }  
+    #nav li {  
+        width: 100%;  
+        float: left;  
+        position: relative;  
+    }  
+    #nav li a {  
+        width: 50%;
+        display: block;
+        border-bottom: 1px solid #576979;  
+        border-right: 1px solid #576979;  
+    }  
+section {
+  position: relative;
+  float: none;
+  margin: 0 auto;
+}
+section h1 {
+  transform: scale(0);
+}
+
   aside {
     width: 100%;
     float: left;
@@ -304,7 +332,7 @@ footer {
     clear: both;
   }
   .img {
-    margin: 10px 10px;
+    margin: 0.625em 0.625em;
     clear: both;
   }
   h1 {
@@ -314,39 +342,58 @@ footer {
   video {
     display: none;
   }
-  #nav {
-    text-align: center;
-    margin-top: 10px;
-     }
-     #nav li a {
-      display: inline;
-      margin-top: 20px;
-      margin-bottom: 20px;
-     }
-     #nav li {
-      float: none;
-      display: inline;
-
-     }
+  
 }  
 /* iPads (portrait and landscape) ----------- */  
 @media only screen and (min-width : 480px) and (max-width : 900px) {  
+ #nav {   
+        height: auto; 
+    }  
+    #nav ul {  
+        width: 100%;  
+        display: block;  
+        height: auto;  
+    }  
+    #nav li {  
+        width: 100%;  
+        float: left;  
+        position: relative;  
+    }  
+    #nav li a {  
+        width: 50%;
+        display: block;
+        border-bottom: 1px solid #576979;  
+        border-right: 1px solid #576979;  
+    }  
+
   video {
   display: none; 
 }  
-#nav {
-    text-align: center;
-    margin-top: 10px;
-     }
-     #nav li a {
-      display: inline;
-      margin-top: 20px;
-      margin-bottom: 20px;
-     }
-     #nav li {
-      float: none;
-      display: inline;
-     }
+#main {
+  float: none;
+  position: relative;
+}
+section {
+  position: relative;
+  float: none;
+  margin: 0 auto;
+}
+section h1 {
+  transform: scale(1.25);
+}
+
+aside {
+    width: 100%;
+    float: left;
+  } 
+.gallery {
+    margin: 0 auto;
+    clear: both;
+  }
+.img {
+    margin: 0.625em 0.625em;
+    clear: both;
+  }
    }
 
 
