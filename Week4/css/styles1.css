@@ -6,12 +6,11 @@ html, blockquote {
   line-height: 1.5;
   color:#939393;
   background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(236,236,236,0) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,1)), color-stop(100%,rgba(236,236,236,0))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(236,236,236,0) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(236,236,236,0) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(236,236,236,0) 100%); /* IE10+ */
-background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(236,236,236,0) 100%); /* W3C */
-  font-size: 16px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,1)), color-stop(100%,rgba(236,236,236,0))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(236,236,236,0) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(236,236,236,0) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(236,236,236,0) 100%); /* IE10+ */
+  background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(236,236,236,0) 100%); /* W3C */
   font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;  }
 
 .clearfix:before,  
@@ -289,7 +288,7 @@ blockquote::after{
 }
 footer {
   clear:both;
-  background:#cc9;
+  background:#fff;
 }
 
 /* Media Queries */
@@ -316,11 +315,41 @@ footer {
     display: none;
   }
   #nav {
-    display: inline-block;
-    clear: both;
+    text-align: center;
+    margin-top: 10px;
      }
      #nav li a {
-      margin: 0 auto;
-      clear: both;
+      display: inline;
+      margin-top: 20px;
+      margin-bottom: 20px;
+     }
+     #nav li {
+      float: none;
+      display: inline;
+
      }
 }  
+/* iPads (portrait and landscape) ----------- */  
+@media only screen and (min-width : 480px) and (max-width : 900px) {  
+  video {
+  display: none; 
+}  
+#nav {
+    text-align: center;
+    margin-top: 10px;
+     }
+     #nav li a {
+      display: inline;
+      margin-top: 20px;
+      margin-bottom: 20px;
+     }
+     #nav li {
+      float: none;
+      display: inline;
+     }
+   }
+
+
+
+
+
