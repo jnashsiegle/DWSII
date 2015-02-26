@@ -313,7 +313,7 @@ blockquote::after{
   background-color: #fff;  
   border:3px #696969;
   border-radius: 30px;
-  margin: 25em 1.250em 1.250em;
+  margin: 5em 1.250em 1.250em;
   width: 90%;
   position: relative;
   -webkit-border-radius: 1.875em;
@@ -503,8 +503,11 @@ section h1 {
   #listing {
     margin: 1em 1.250em 1.250em;
   }
-
-}  
+textarea, input[type= "file"] {
+ width: 75%;
+}
+}
+  
 
 
 /* iPads (portrait and landscape) ----------- */  
