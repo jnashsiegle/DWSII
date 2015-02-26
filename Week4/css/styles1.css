@@ -245,7 +245,7 @@ section h1 {
     height:12.500em; 
     width:12.500em; 
 }  
-article > h1:nth-child(1), blockquote::before, h2#introQuotes{
+article > h1:nth-child(1), blockquote::before, h2#introQuotes, caption{
   text-align: center;
   -webkit-text-stroke: 1px #d3d3d3;
    color: white;
@@ -329,22 +329,17 @@ table {
   margin: 0 auto;
 }
 caption {
-
+  font-size:1.5em;
 }
 td, th, tfoot {
   border: 2px solid #cecece;
   padding: .625em;
   text-align: left;
 }
-td {
-
-}
 tr:nth-child(even) {
     background-color: #bdbdbd;
     color: #545454;
 }
-
-
 footer {
   clear:both;
   color: #fff;
@@ -469,7 +464,64 @@ aside {
   }
    }
 
+/* Desktops and laptops ----------- */  
+@media only screen and (min-width : 901px) and (max-width : 1200px) {  
+  #nav {   
+        height: auto; 
+    }  
+    #nav ul {  
+        width: 100%;  
+        display: block;  
+        height: auto;  
+    }  
+    #nav li {  
+        width: 100%;  
+        float: left;  
+        position: relative;  
+    }  
+    #nav li a {  
+        width: 50%;
+        display: block;
+        border-bottom: 1px solid #576979;  
+        border-right: 1px solid #576979; 
+        margin: 0 auto; 
+    }  
+  video {
+  display: none; 
+}  
 
+#main {
+  float: none;
+  position: relative;
+  margin: 0 auto;
+}
+section {
+  position: relative;
+  float: none;
+  margin: 0 auto;
+}
+section h1 {
+  transform: scale(1.25);
+}
+
+aside {
+    width: 100%;
+    float: left;
+  } 
+.gallery {
+    margin: 0 auto;
+    clear: both;
+  }
+.img {
+    margin: 0.625em 0.625em;
+    clear: both;
+  }
+  #listing {
+    margin: 1.5em 1.250em 1.250em;
+
+  }
+    
+  }
 
 
 
