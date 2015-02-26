@@ -314,6 +314,7 @@ footer {
         display: block;
         border-bottom: 1px solid #576979;  
         border-right: 1px solid #576979;  
+        margin: 0 auto;
     }  
 section {
   position: relative;
@@ -321,7 +322,9 @@ section {
   margin: 0 auto;
 }
 section h1 {
-  transform: scale(0);
+  text-align: center;
+  float: none;
+  transform: scale(1);
 }
 
   aside {
@@ -363,15 +366,18 @@ section h1 {
         width: 50%;
         display: block;
         border-bottom: 1px solid #576979;  
-        border-right: 1px solid #576979;  
+        border-right: 1px solid #576979; 
+        margin: 0 auto; 
     }  
 
   video {
   display: none; 
 }  
+
 #main {
   float: none;
   position: relative;
+  margin: 0 auto;
 }
 section {
   position: relative;
