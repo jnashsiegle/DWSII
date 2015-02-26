@@ -57,7 +57,7 @@ h3{
 #wrap {
   width:90%;
   margin:0 auto;
-  background:#ececec;
+  background:#2e2e2e;
 }
 /*First Column*/
 #main {  
@@ -161,6 +161,16 @@ video {
     -ms-transform: scale(1,2); /* IE 9 */
     -webkit-transform: scale(1,2); /* Chrome, Safari, Opera */
     transform: scale(1.25);
+}
+a:link {
+  color: #cecece;
+  text-decoration: underline;
+}
+a:hover {
+  color: green;
+}
+a:visited {
+  color: #2e2e2e;
 }
 section {  
     padding:0.313em;
