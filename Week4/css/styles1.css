@@ -165,12 +165,9 @@ section {
 section h1 {
   text-align: center;
   letter-spacing: 0.313em;
-  -ms-transform: skew(-10deg,-15deg); /* IE 9 */
-  -webkit-transform: skew(-10deg,-15deg); /* Chrome, Safari, Opera */
-  transform: skew(-10deg,-15deg);
-  -ms-transform: scale(2); /* IE 9 */
-  -webkit-transform: scale(2); /* Chrome, Safari, Opera */
-  transform: scale(2);
+  -webkit-transform: matrix(2, -0.535898384862245, -0.35265396141693, 2, 0, 0);
+  -moz-transform: matrix(2, -0.535898384862245, -0.35265396141693, 2, 0, 0);
+  transform: matrix(2, -0.535898384862245, -0.35265396141693, 2, 0, 0);
 }
  /*Image Styling for Section Galleries*/
  .gallery {
