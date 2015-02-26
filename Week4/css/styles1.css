@@ -173,6 +173,7 @@ a:link {
 a:hover, a:visited{
   color: green;
 }
+/* Category Sections */
 section {  
     padding:0.313em;
     margin-top:0.938em;
@@ -180,6 +181,7 @@ section {
 }
 section h1 {
   text-align: center;
+  margin-bottom:3em;
   letter-spacing: 0.313em;
   -webkit-transform: matrix(2, -0.535898384862245, -0.35265396141693, 2, 0, 0);
   -moz-transform: matrix(2, -0.535898384862245, -0.35265396141693, 2, 0, 0);
@@ -282,11 +284,16 @@ blockquote{
   margin: 0 1.250em 1.250em;
   position: relative;
   text-align: justify;
+  -webkit-border-radius: 1.875em;
+  -moz-border-radius: 1.875em;
+  border-radius: 1.875em;
+  border-top: 0.938em solid #696969;
+  border-bottom: 0.938em solid #696969;
   border-left: 0.938em solid #696969;
   border-right: 0.125em solid #696969;
-  -moz-box-shadow: 2px 2px 0.938em #ccc;
-  -webkit-box-shadow: 2px 2px 0.938em #ccc;
-  box-shadow: 2px 2px 0.938em #ccc;  
+  -moz-box-shadow: 0.125em 0.125em 0.938em #ccc;
+  -webkit-box-shadow: 0.125em 0.125em 0.938em #ccc;
+  box-shadow: 0.125em 0.125em 0.938em #ccc;  
 }
 blockquote::before{
   content: "\201C"; /*Unicode for Left Double Quote*/
@@ -299,6 +306,45 @@ blockquote::after{
   /*Reset to make sure*/
   content: "";
 }
+#listing {
+  border-collapse: collapse;
+  background-color: #fff;  
+  border:3px #696969;
+  border-radius: 30px;
+  margin: 25em 1.250em 1.250em;
+  width: 90%;
+  position: relative;
+  -webkit-border-radius: 1.875em;
+  -moz-border-radius: 1.875em;
+  border-radius: 1.875em;
+  border-top: 0.938em solid #696969;
+  border-bottom: 0.938em solid #696969;
+  border-left: 0.938em solid #696969;
+  border-right: 0.125em solid #696969;
+  -moz-box-shadow: 0.125em 0.125em 0.938em #ccc;
+  -webkit-box-shadow: 0.125em 0.125em 0.938em #ccc;
+  box-shadow: 0.125em 0.125em 0.938em #ccc;  
+}
+table {
+  margin: 0 auto;
+}
+caption {
+
+}
+td, th, tfoot {
+  border: 2px solid #cecece;
+  padding: .625em;
+  text-align: left;
+}
+td {
+
+}
+tr:nth-child(even) {
+    background-color: #bdbdbd;
+    color: #545454;
+}
+
+
 footer {
   clear:both;
   color: #fff;
