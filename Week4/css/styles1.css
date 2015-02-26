@@ -405,7 +405,13 @@ section h1 {
   video {
     display: none;
   }  
+  #listing {
+    margin: 1em 1.250em 1.250em;
+  }
+
 }  
+
+
 /* iPads (portrait and landscape) ----------- */  
 @media only screen and (min-width : 480px) and (max-width : 900px) {  
  #nav {   
@@ -428,7 +434,6 @@ section h1 {
         border-right: 1px solid #576979; 
         margin: 0 auto; 
     }  
-
   video {
   display: none; 
 }  
@@ -458,6 +463,9 @@ aside {
 .img {
     margin: 0.625em 0.625em;
     clear: both;
+  }
+  #listing {
+    margin: 1.5em 1.250em 1.250em;
   }
    }
 
