@@ -108,6 +108,11 @@ video {
   line-height: 1.5em;
 }
   /*Navigation*/
+
+#nav h3 {
+  display: inline;
+  float: left;
+}
 #nav ul{
   background-color: black;
     overflow: hidden;
