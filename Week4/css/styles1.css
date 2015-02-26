@@ -96,6 +96,10 @@ video {
   -moz-border-radius: 0.313em;
   border-radius: 0.313em;
 }
+.special {
+  text-transform: uppercase;
+  color: #fff;
+}
 #intro {
     margin: 0 auto;
     border-bottom: 0.125em double  #696969;
@@ -163,14 +167,11 @@ video {
     transform: scale(1.25);
 }
 a:link {
-  color: #cecece;
+  color: #fff;
   text-decoration: underline;
 }
-a:hover {
+a:hover, a:visited{
   color: green;
-}
-a:visited {
-  color: #2e2e2e;
 }
 section {  
     padding:0.313em;
