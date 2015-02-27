@@ -566,8 +566,10 @@ aside {
   #listing {
     margin: 1.5em 1.250em 1.250em;
   }
-   }
-
+  textarea, input[type= "file"] {
+ width: 75%;
+  }
+}
 /* Desktops and laptops ----------- */  
 @media only screen and (min-width : 901px) and (max-width : 1200px) {  
   #nav {   
@@ -623,6 +625,11 @@ aside {
   #listing {
     margin: 1.5em 1.250em 1.250em;
   }
+  textarea, input[type= "file"] {
+ width: 75%;
+  }
+}
+
 }
 
 
