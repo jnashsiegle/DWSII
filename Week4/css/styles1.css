@@ -49,7 +49,7 @@ h2{
     font-size: 2.1em;  
     line-height: 1.9em; 
 }  
-h3{  
+h3{
     font-size: 1.8em;  
     line-height: 1.65em;  
 }  
@@ -113,22 +113,17 @@ video {
 }
   /*Navigation*/
 
-#nav h3 {
-  display: inline;
-  float: left;
-}
-#nav ul{
-  background-color: black;
+#nav ul {
+    background-color: black;
     overflow: hidden;
-    list-style:none;    
-    clear: both;
+    list-style:none; 
     padding: 0;
     margin: 0;
 }
 #nav li {
-    float: right;
+    text-align: center;
     list-style: none;
-    display: inline;    
+    display: inline-block;    
     margin: 1em;
 }
 #nav li a {    
@@ -428,7 +423,7 @@ input[type="submit"]{
   border-radius: .626em;
 }
 input[type="submit"]:hover {
-  background:#b696969;
+  background:#696969;
   color:#fff;
     -moz-transition: 1s;
     -webkit-transition: 1s;
@@ -438,13 +433,14 @@ input[type="submit"]:hover {
 input[type= "file"] {
   margin-bottom: 2em;
 }
-
-
 footer {
   clear:both;
   color: #fff;
   background:#cecece;
 }
+textarea, input[type= "file"] {
+ width: 75%;
+  }
 
 /* Media Queries */
 
@@ -503,6 +499,12 @@ section h1 {
   #listing {
     margin: 1em 1.250em 1.250em;
   }
+  #info {
+    margin-top: 1.250em;
+  }
+  textarea, input[type= "file"] {
+ width: 75%;
+  }
 
 }  
 
@@ -546,7 +548,6 @@ section {
 section h1 {
   transform: scale(1.25);
 }
-
 aside {
     width: 100%;
     float: left;
@@ -562,7 +563,13 @@ aside {
   #listing {
     margin: 1.5em 1.250em 1.250em;
   }
-   }
+  #info {
+    margin-top: 1.250em;
+  }
+  textarea, input[type= "file"] {
+ width: 75%;
+  }
+}
 
 /* Desktops and laptops ----------- */  
 @media only screen and (min-width : 901px) and (max-width : 1200px) {  
@@ -589,7 +596,6 @@ aside {
   video {
   display: none; 
 }  
-
 #main {
   float: none;
   position: relative;
@@ -603,7 +609,6 @@ section {
 section h1 {
   transform: scale(1.25);
 }
-
 aside {
     width: 100%;
     float: left;
@@ -618,10 +623,11 @@ aside {
   }
   #listing {
     margin: 1.5em 1.250em 1.250em;
-
+}
+textarea, input[type= "file"] {
+ width: 75%;
   }
-    
-  }
+}
 
 
 

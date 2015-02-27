@@ -428,7 +428,7 @@ input[type="submit"]{
   border-radius: .626em;
 }
 input[type="submit"]:hover {
-  background:#b696969;
+  background:#696969;
   color:#fff;
     -moz-transition: 1s;
     -webkit-transition: 1s;
@@ -503,13 +503,14 @@ section h1 {
   #listing {
     margin: 1em 1.250em 1.250em;
   }
+  #info {
+    margin-top: 1.250em;
+  }
 textarea, input[type= "file"] {
  width: 75%;
+  }
 }
-}
-  
-
-
+ 
 /* iPads (portrait and landscape) ----------- */  
 @media only screen and (min-width : 480px) and (max-width : 900px) {  
  #nav {   
@@ -621,10 +622,8 @@ aside {
   }
   #listing {
     margin: 1.5em 1.250em 1.250em;
-
   }
-    
-  }
+}
 
 
 

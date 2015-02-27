@@ -337,9 +337,6 @@ nav a#pull {
 .no-cssanimations .lpSlideshow li span{
 	opacity: 1;
 }
-
-
-
 /*Styles for screen 600px and lower*/
 @media screen and (max-width: 600px) {  
     nav {   
@@ -365,7 +362,9 @@ nav a#pull {
         width: 100%;  
         text-indent: 25px;  
     }  
-     .lpSlideshow li div h3 { font-size: 2em }
+     .lpSlideshow li div h3 { 
+        font-size: 2em;
+         }
 } 
 /*Styles for screen 515px and lower*/
 @media only screen and (max-width : 480px) {
@@ -385,7 +384,7 @@ nav a#pull {
         float: none;
     }
     .lpSlideshow li:nth-child(1) span { 
-    background-image: url(../images/antelope_small.jpg) 
+    background-image: url(../images/antelope_small.jpg); 
     }
     .lpSlideshow li:nth-child(2) span { 
     background-image: url(../images/bambooforest_small.jpg);
@@ -414,5 +413,10 @@ nav a#pull {
     } 
 }
 @media screen and (max-width: 1140px) { 
-    .lpSlideshow li div h3 { font-size: 3em }
+    .lpSlideshow li div h3 {
+     font-size: 3em; 
+ }
 }
+
+
+

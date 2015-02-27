@@ -19,17 +19,12 @@
 	        <script type = "text/javascript" src = "js/modernizr.js"></script>
 	        <script type = "text/javascript" src = "js/respond.min.js"></script>
 	        <script type = "text/javascript" src = "js/html5shiv.min.js"></script>
-	        
-
 </head>
 
 <body>
-	
-	
 	<div id = "wrap">
 				<div id ="nav">
 				<ul>
-				<h3 id = "top">Exploring Interesting Locations</h3>
 					<li><a href = "index.html" title = "home">Home</a></li>
 					<li><a href = "page.html" title = "Previous">Previous</a></li>
 					<li><a href = "page.html#tunnels" title = "tunnels">Tunnels</a></li>
@@ -37,8 +32,7 @@
 					<li><a href = "#gardens" title = "gardens">Gardens</a></li>
 				</ul>
 				</div>
-				
-		<header id>
+		<header>
 					<video controls autoplay muted> 
   					<source src="assets/liftoff.mp4" type="video/mp4">
 					  Video provided by  <a href = "http://www.nasa.gov/multimedia/hd/">Nasa</a>
@@ -115,12 +109,12 @@
 							<tr>
 								<td> 10</td>
 								<td><a href = "https://en.wikipedia.org/wiki/Door_to_Hell" target = "_blank" title = "Door to Hell">Door to Hell</a></td>
-								<td>Turkmenistan</a></td>
+								<td>Turkmenistan</td>
 							</tr>
 							<tr>
 								<td> 9</td>
 								<td><a href = "https://en.wikipedia.org/wiki/Mount_Roraima" target = "_blank" title = "Mount Roraima">Mount Roraima</a></td>
-								<td> Brazil</a></td>
+								<td> Brazil</td>
 							</tr>
 							<tr>
 								<td>8</td>
@@ -173,9 +167,9 @@
 
 						<fieldset><legend>Do you like interesting locations?</legend>
 									<label for = "iLoc">Yes </label>
-								    	<input type="radio" name="iLoc" value="yes" id = "iLoc" value="" checked="checked">  
+								    	<input type="radio" name="iLoc" value="yes" id = "iLoc" checked="checked">  
 								    <label for = "iLoc2">No</label>
-								    	<input type="radio" name= "iLoc" value="no" id = "iLoc1">
+								    	<input type="radio" name= "iLoc" value="no" id = "iLoc2">
 						</fieldset> 
 						<p id = "submission1">If you want to submit a site please fill out the information below.&nbsp; (<span class = "red">*</span> required field)</p>
 						<fieldset>
@@ -204,9 +198,9 @@
 			  						<input id = "subloc" type = "text" placeholder = "location name" aria-required = "true">
 			  				</fieldset>
 			  				<fieldset>
-			  				<label for="file-upload" class="custom-file-upload">Browse
-			  					   <input type="file" name="pic" accept="image/*">  <input type="submit"></label>
-							</fieldset>
+			  				<label for="file-upload" class="custom-file-upload">Browse</label>
+			  					  <input type="file" name="pic" accept="image/*" id = "file-upload">
+ 							</fieldset>
 							<fieldset>
 			  					<label for = "date">When did travel to this location?</label>
 			  						<input id = "date" type = "date" name = "date"/>
@@ -220,19 +214,11 @@
 								<input class="submit_btn" name="submit" type="submit" value="Save" onclick="submit();" />
 								</p>
 							</div>
-							</fieldset
+							</fieldset>
 					</form>
-
-
-
-
-
+				</div>
 		</aside>
-		
-		
 		<footer> ©2015, Jana-Nash-Siegle</footer>
-
 	</div> <!--end of wrap -->
-
-
 </body>
+</html>
