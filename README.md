@@ -1,2 +1,2 @@
-#Web Standards and Design Part 1
-located under gh-pages and published
+#Web Standards and Design Part 2
+located under gh-pages 
